@@ -1,0 +1,30 @@
+{
+    "name": "team-nifty-gmbh/nuxbe-user-docs",
+    "description": "User documentation for Nuxbe ERP",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TeamNiftyGmbH\\NuxbeUserDocs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Team Nifty GmbH",
+            "email": "dev@team-nifty.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TeamNiftyGmbH\\NuxbeUserDocs\\NuxbeUserDocsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.4",
+        "team-nifty-gmbh/flux-erp": "dev-main"
+    }
+}
