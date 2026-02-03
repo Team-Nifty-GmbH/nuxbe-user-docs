@@ -14,6 +14,8 @@ Die Suchleiste befindet sich oberhalb der Tabelle auf der linken Seite.
 
 3. Die Tabelle zeigt sofort nur noch die Einträge, die den Suchbegriff in mindestens einer der sichtbaren Spalten enthalten.
 
+   ![Suchergebnisse nach Eingabe eines Suchbegriffs](../screenshots/135-suchergebnisse.png)
+
 4. Um die Suche zurückzusetzen, löschen Sie den Text im Suchfeld vollständig. Die Tabelle zeigt dann wieder alle Einträge an.
 
 > **Hinweis:** Die Suche durchsucht alle aktuell sichtbaren Spalten gleichzeitig. Wenn Sie eine Spalte ausgeblendet haben, wird deren Inhalt bei der Suche nicht berücksichtigt. Informationen zum Ein- und Ausblenden von Spalten finden Sie im Kapitel [Spalten anpassen](3-spalten-anpassen.md).

@@ -30,6 +30,8 @@ In addition to the standard columns of a record, you can also add columns from r
 
 3. Expand the desired relation to see its fields.
 
+   ![Expanded relation showing available fields](../screenshots/138-sidebar-columns-relations.png)
+
 4. Tick the checkbox next to the field you want to add as a column.
 
 5. The new column appears in the table. You can sort and filter it like any other column.

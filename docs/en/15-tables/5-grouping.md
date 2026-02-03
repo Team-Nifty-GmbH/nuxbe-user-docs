@@ -16,6 +16,8 @@ The grouping function combines table entries by a shared attribute. This lets yo
 
 5. The table is restructured immediately. Entries with the same value in the chosen column are combined into a group. Each group shows a header row with the group value and the number of entries it contains.
 
+   ![Grouped table view with expanded group](../screenshots/140-grouped-view.png)
+
 6. Click on a group header to expand or collapse the entries within that group.
 
 ## Removing a Grouping

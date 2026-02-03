@@ -12,6 +12,8 @@ Column filters are input fields located directly below the column headers. Each 
 
    ![Column filter fields below the column headers](../screenshots/127-column-filters.png)
 
+   ![Active column filter with filtered results](../screenshots/136-column-filter-active.png)
+
 3. You can set filters on multiple columns at the same time. All filters are combined with AND logic — only entries that match all active filters are displayed.
 
 4. To remove a column filter, clear the text in the corresponding filter field.
@@ -30,6 +32,8 @@ The sidebar provides advanced filter options that go beyond simple text matching
    - The **column** to filter on
    - The **operator** (e.g. equals, contains, greater than, less than)
    - The **value** to compare against
+
+   ![Sidebar with filled filter form](../screenshots/137-sidebar-add-filter.png)
 
 4. Add additional filter conditions as needed. All conditions are combined — only entries that satisfy every condition are shown.
 

@@ -21,6 +21,8 @@ The summarise function lets you create statistical evaluations across the numeri
 
 4. Tick the checkboxes for the calculations you want. You can activate multiple calculations for the same column and calculations for different columns at the same time.
 
+   ![Active aggregation checkboxes for multiple columns](../screenshots/139-sidebar-summarize-active.png)
+
 5. The results are displayed at the bottom of the table in a summary row.
 
 ## Searching for Columns

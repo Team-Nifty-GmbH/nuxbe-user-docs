@@ -18,6 +18,8 @@ In many tables you can select one or more rows to apply actions to the selected 
 
 2. The number of selected rows is displayed above the table.
 
+   ![Three selected rows with selection count displayed](../screenshots/142-rows-selected.png)
+
 3. To remove a single row from the selection, click its checkbox again.
 
 ## Selecting All Rows

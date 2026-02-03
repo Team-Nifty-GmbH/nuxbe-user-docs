@@ -14,6 +14,8 @@ Sie können die Inhalte jeder Datentabelle als Datei exportieren. Der Export ber
 
 4. **Spalten anpassen:** Aktivieren oder deaktivieren Sie die Kontrollkästchen, um festzulegen, welche Spalten im Export enthalten sein sollen. Sie können für den Export auch Spalten einschließen, die in der Tabellenansicht ausgeblendet sind.
 
+   ![Spaltenauswahl im Export-Tab der Seitenleiste](../screenshots/141-seitenleiste-exportieren.png)
+
 5. Klicken Sie auf die Schaltfläche **Exportieren**, um den Download zu starten.
 
 6. Die Datei wird automatisch heruntergeladen und in Ihrem Standard-Download-Ordner gespeichert.

@@ -12,6 +12,8 @@ Unterhalb jeder Spaltenüberschrift befindet sich ein Eingabefeld für den Spalt
 
 2. Geben Sie den Filterwert ein. Die Tabelle aktualisiert sich sofort und zeigt nur noch Einträge, die den eingegebenen Wert in dieser Spalte enthalten.
 
+   ![Aktiver Spaltenfilter mit gefilterten Ergebnissen](../screenshots/136-spaltenfilter-aktiv.png)
+
 3. Sie können mehrere Spaltenfilter gleichzeitig setzen. Die Tabelle zeigt dann nur Einträge an, die **alle** gesetzten Filter gleichzeitig erfüllen.
 
 4. Um einen Spaltenfilter zu entfernen, löschen Sie den Text im jeweiligen Eingabefeld vollständig.
@@ -37,6 +39,8 @@ Für komplexere Filterbedingungen steht die Seitenleiste mit dem Tab **Filter be
 2. Legen Sie die Filterbedingung fest (z. B. „enthält", „gleich", „größer als").
 
 3. Geben Sie den Filterwert ein.
+
+   ![Seitenleiste mit ausgefülltem Filterformular](../screenshots/137-seitenleiste-filter-hinzufuegen.png)
 
 4. Der Filter wird sofort angewendet. Die Tabelle aktualisiert sich in Echtzeit.
 

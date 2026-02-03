@@ -18,6 +18,8 @@ In vielen Tabellen können Sie einzelne oder mehrere Zeilen auswählen, um Aktio
 
 2. Die Anzahl der ausgewählten Zeilen wird oberhalb der Tabelle angezeigt.
 
+   ![Drei ausgewählte Zeilen mit Anzeige der Auswahlanzahl](../screenshots/142-zeilen-ausgewaehlt.png)
+
 3. Um eine einzelne Zeile aus der Auswahl zu entfernen, klicken Sie erneut auf deren Kontrollkästchen.
 
 ## Alle Zeilen auswählen

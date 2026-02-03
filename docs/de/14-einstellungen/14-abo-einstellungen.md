@@ -67,5 +67,7 @@ Wiederkehrende Aufträge nutzen Zeitpläne (Schedules), die festlegen:
 ## Weiterführende Themen
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
+- [Abonnements](../4-auftraege/5-auftragsarten/4-abonnements.md) - Abonnements erstellen, Zeitpläne einrichten und kündigen
 - [Aufträge](../4-auftraege/0-index.md) - Aufträge verwalten
 - [Auftragsarten](11-auftragsarten.md) - Dokumenttypen definieren
+- [E-Mail-Vorlagen](25-email-vorlagen.md) - Vorlagen für automatischen Versand

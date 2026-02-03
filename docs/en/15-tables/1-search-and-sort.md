@@ -12,6 +12,8 @@ The search bar is located at the top of every data table.
 
 2. The table updates immediately as you type. Only entries that contain the search term in any of the visible columns are shown.
 
+   ![Search results after entering a search term](../screenshots/135-search-results.png)
+
 3. To clear the search, delete the text in the search bar. The table then shows all entries again.
 
 > **Note:** The search only covers columns that are currently visible. If you are looking for content in a specific column, make sure that column is displayed. See [Customise Columns](3-customise-columns.md) for details.

@@ -14,6 +14,8 @@ You can export the contents of any data table as a file. The export takes into a
 
 4. **Adjust columns:** Tick or untick the checkboxes to choose which columns should be included in the export. You can also include columns that are hidden in the table view.
 
+   ![Column selection in the Export tab of the sidebar](../screenshots/141-sidebar-export.png)
+
 5. Click the **Export** button to start the download.
 
 6. The file is downloaded automatically and saved to your default download folder.

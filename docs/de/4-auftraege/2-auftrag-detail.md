@@ -89,8 +89,10 @@ Je nach Auftragsart und Status stehen verschiedene Aktionen zur Verfügung:
 | **Auftrag erstellen** | Erzeugt aus einem Angebot einen bestätigten Auftrag |
 | **Rechnung erstellen** | Generiert aus einem Auftrag eine Rechnung |
 | **Lieferschein** | Erstellt einen Lieferschein auf Basis der Auftragspositionen |
+| **Zeitplan** | Nur bei Abonnements: Öffnet die Zeitplan-Konfiguration für wiederkehrende Belege |
+| **Kündigung** | Nur bei Abonnements: Startet den Kündigungsprozess |
 
-> **Hinweis:** Nicht alle Aktionen sind zu jeder Zeit verfügbar. Die Anzeige passt sich dem aktuellen Status und der Auftragsart an.
+> **Hinweis:** Nicht alle Aktionen sind zu jeder Zeit verfügbar. Die Anzeige passt sich dem aktuellen Status und der Auftragsart an. Die einzelnen Auftragsarten und ihre spezifischen Funktionen sind unter [Auftragsarten](5-auftragsarten/0-index.md) dokumentiert.
 
 ## Auftrag bearbeiten
 

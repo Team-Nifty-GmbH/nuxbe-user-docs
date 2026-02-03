@@ -21,6 +21,8 @@ Mit der Zusammenfassungsfunktion können Sie statistische Auswertungen über die
 
 4. Aktivieren Sie die gewünschten Kontrollkästchen. Sie können mehrere Berechnungen für dieselbe Spalte und Berechnungen für verschiedene Spalten gleichzeitig aktivieren.
 
+   ![Aktivierte Auswertungen für mehrere Spalten](../screenshots/139-seitenleiste-zusammenfassen-aktiv.png)
+
 5. Die Ergebnisse werden am unteren Rand der Tabelle in einer Zusammenfassungszeile angezeigt.
 
 ## Spalten suchen

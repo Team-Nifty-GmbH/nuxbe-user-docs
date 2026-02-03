@@ -16,6 +16,8 @@ Die Gruppierungsfunktion fasst Tabelleneinträge nach einem gemeinsamen Merkmal 
 
 5. Die Tabelle wird sofort umstrukturiert. Einträge mit dem gleichen Wert in der gewählten Spalte werden zu einer Gruppe zusammengefasst. Jede Gruppe zeigt eine Überschriftszeile mit dem Gruppenwert und der Anzahl der enthaltenen Einträge.
 
+   ![Gruppierte Tabellenansicht mit aufgeklappter Gruppe](../screenshots/140-gruppierte-ansicht.png)
+
 6. Klicken Sie auf eine Gruppenüberschrift, um die zugehörigen Einträge ein- oder auszuklappen.
 
 ## Gruppierung entfernen

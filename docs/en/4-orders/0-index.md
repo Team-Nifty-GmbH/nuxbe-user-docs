@@ -42,6 +42,7 @@ In the detail view you will find:
 - [Order Details](2-order-detail.md) - Detail view of an order
 - [Order Positions](3-order-positions.md) - Manage positions within an order
 - [Order Positions List](4-order-positions-list.md) - All positions across orders
+- [Order Types](5-order-types/0-index.md) - Details on each order type (quotes, orders, subscriptions, purchases, etc.)
 
 ## Related Topics
 

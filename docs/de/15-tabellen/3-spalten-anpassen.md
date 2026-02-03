@@ -30,6 +30,8 @@ Neben den Standardspalten eines Datensatzes können Sie auch Spalten aus verknü
 
 3. Klappen Sie die gewünschte Relation auf, um deren Felder zu sehen.
 
+   ![Aufgeklappte Relation mit verfügbaren Feldern](../screenshots/138-seitenleiste-spalten-relationen.png)
+
 4. Aktivieren Sie das Kontrollkästchen neben dem Feld, das Sie als Spalte hinzufügen möchten.
 
 5. Die neue Spalte erscheint in der Tabelle. Sie können sie wie jede andere Spalte sortieren und filtern.

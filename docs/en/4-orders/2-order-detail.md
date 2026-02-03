@@ -33,6 +33,10 @@ Attached files and generated documents (e.g. PDF invoices).
 - **Save** - Apply changes
 - **Duplicate** - Copy the order
 - **Delete** - Delete the order
+- **Schedule** - Subscriptions only: Configure the recurrence schedule
+- **Cancellation** - Subscriptions only: Start the cancellation process
+
+> **Note:** Not all actions are available at all times. The display adapts to the current status and order type. The individual order types and their specific features are documented under [Order Types](5-order-types/0-index.md).
 
 ## Related Topics
 
