@@ -40,6 +40,24 @@ Die Kopfdaten umfassen alle übergeordneten Informationen zum Auftrag:
 | **Lieferdatum** | Geplantes oder tatsächliches Lieferdatum |
 | **Kopfrabatt** | Prozentualer Rabatt, der auf alle Positionen des Auftrags angewendet wird |
 
+### Rechnungsadresse auswählen
+
+Beim Anlegen oder Bearbeiten eines Auftrags können Sie die Rechnungsadresse aus allen Adressen auswählen, die beim verknüpften Kontakt hinterlegt sind. Klicken Sie dazu auf das Dropdown-Feld **Rechnungsadresse**, um alle verfügbaren Adressen des Kontakts einzusehen. Standardmäßig wird die Hauptadresse des Kontakts vorgeschlagen -- Sie können jedoch jederzeit eine andere Adresse auswählen.
+
+Dies ist besonders wichtig, wenn ein Kontakt mehrere Standorte oder Abteilungen hat, die Rechnungen separat erhalten sollen. Jeder Auftrag kann eine eigene Rechnungsadresse haben. Die Rechnungsadresse bestimmt, welche Anschrift auf dem Beleg (PDF, Druck) erscheint.
+
+Das Ändern der Rechnungsadresse an einem Auftrag hat keinen Einfluss auf die Standardadresse des Kontakts. Die Anpassung wirkt sich ausschließlich auf den jeweiligen Auftrag aus.
+
+> **Beispiel:** Ihr Kunde „Muster GmbH" hat eine Zentrale in München und eine Niederlassung in Berlin. Wählen Sie bei der Auftragsanlage einfach die jeweils passende Adresse im Feld **Rechnungsadresse** aus.
+
+> **Hinweis:** Der automatische E-Mail-Versand von Mahnungen verwendet bevorzugt die E-Mail-Adresse der hier ausgewählten **Rechnungsadresse des Auftrags**. Ist dort keine E-Mail hinterlegt, fällt das System auf die Rechnungsadresse des Kontakts und dann auf die Hauptadresse zurück. Stellen Sie sicher, dass an der Rechnungsadresse eine gültige E-Mail-Adresse hinterlegt ist. Weitere Details finden Sie unter [Mahnungen](../5-buchhaltung/2-mahnungen.md).
+
+### Zahlungserinnerung
+
+Das Feld **Zahlungserinnerung Nächstes Datum** steuert, wann die nächste Zahlungserinnerung für diesen Auftrag fällig wird. Das System prüft dieses Datum beim automatischen Mahnlauf. Ist das Datum erreicht und die Rechnung noch nicht bezahlt, wird automatisch eine Mahnung erzeugt.
+
+Sie können dieses Datum manuell setzen oder anpassen, um eine Mahnung zu verzögern oder vorzuziehen. Lassen Sie das Feld leer, um die Standardwerte aus den hinterlegten Zahlungsbedingungen zu verwenden.
+
 > **Hinweis:** Wenn Sie den Kontakt auswählen oder ändern, werden die Rechnungs- und Lieferadresse sowie die Zahlungseinstellungen automatisch aus den Stammdaten des Kontakts übernommen. Sie können diese Werte anschließend manuell anpassen.
 
 ### Positionen
@@ -114,5 +132,8 @@ Um aus einem bestehenden Auftrag einen Folgebeleg zu erstellen:
 - [Auftragspositionen](3-auftragspositionen.md) - Positionen bearbeiten und hinzufügen
 - [Kontakte](../2-kontakte/0-index.md) - Verknüpften Kontakt bearbeiten
 - [Buchhaltung](../5-buchhaltung/0-index.md) - Zahlungen und Transaktionen verwalten
+- [Mahnungen](../5-buchhaltung/2-mahnungen.md) - Mahnwesen und Zahlungserinnerungen
+- [Adressen](../2-kontakte/3-adressen.md) - Rechnungsadressen verwalten
+- [Kommunikation](../2-kontakte/4-kommunikation.md) - E-Mail-Adressen auf Kontakt- und Adressebene
 - [Einstellungen > Auftragsarten](../14-einstellungen/11-auftragsarten.md) - Auftragsarten und Nummernkreise konfigurieren
 - [Einstellungen > Zahlungsarten](../14-einstellungen/12-zahlungsarten.md) - Zahlungsarten einrichten

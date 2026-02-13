@@ -46,6 +46,11 @@ Unter **Einstellungen > Allgemein > Mandanten** verwalten Sie Ihre Firmendaten u
    - **SEPA-Text Basis** - Mandatstext für SEPA-Basislastschriften
    - **SEPA-Text B2B** - Mandatstext für SEPA-Firmenlastschriften
 
+### Bankverbindungen
+   - **Bankverbindungen** - Wählen Sie eine oder mehrere [Bankverbindungen](21-bankverbindungen.md) aus, die auf Rechnungen und anderen Dokumenten dieses Mandanten angezeigt werden sollen. Die Bankverbindungen müssen zuvor unter [Einstellungen > Buchhaltung > Bankverbindungen](21-bankverbindungen.md) angelegt worden sein.
+
+> **Wichtig:** Damit Bankverbindungen auf Rechnungen erscheinen, müssen sie hier dem Mandanten zugeordnet werden. Das alleinige Anlegen unter Bankverbindungen reicht nicht aus.
+
 ### Weitere Einstellungen
    - **Öffnungszeiten** - JSON-Struktur für Geschäftszeiten (optional)
    - **AGB** - Allgemeine Geschäftsbedingungen (Langtext)
@@ -90,6 +95,7 @@ Das System unterstützt mehrere Mandanten gleichzeitig. Dies ermöglicht:
 ## Weiterführende Themen
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
+- [Bankverbindungen](21-bankverbindungen.md) - Bankverbindungen anlegen und verwalten
 - [Länder](2-laender.md) - Länderverwaltung
 - [Rechnungen](../10-rechnungen/0-index.md) - Rechnungen mit Mandantendaten
 - [Angebote](../8-angebote/0-index.md) - Angebote mit Mandantendaten

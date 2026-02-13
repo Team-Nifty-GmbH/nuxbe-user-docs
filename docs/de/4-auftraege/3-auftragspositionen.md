@@ -32,23 +32,32 @@ Nuxbe unterstützt verschiedene Arten von Positionen:
 
 Eine Standardposition, die auf einem Produkt aus dem Katalog basiert. Beim Hinzufügen eines Produkts werden Name, Beschreibung, Einzelpreis und MwSt-Satz automatisch aus dem Produktkatalog übernommen.
 
-### Freitextposition
+### Manuelle Position
 
-Eine Position ohne Verknüpfung zu einem Produkt. Sie geben Name, Beschreibung, Menge und Preis manuell ein. Freitextpositionen eignen sich für individuelle Dienstleistungen oder einmalige Posten, die nicht im Katalog geführt werden.
+Eine Position ohne Verknüpfung zu einem Produkt. Sie geben Name, Beschreibung, Menge und Preis manuell ein. Manuelle Positionen eignen sich für individuelle Dienstleistungen oder einmalige Posten, die nicht im Katalog geführt werden.
 
-### Textposition
+### Kommentar / Block (Textposition)
 
-Eine reine Textzeile ohne Preis- oder Mengenangaben. Textpositionen dienen als Zwischenüberschriften, Trennzeilen oder ergänzende Hinweise innerhalb der Positionsliste. Sie erscheinen auf dem Beleg, werden aber nicht in die Betragsberechnung einbezogen.
+Eine reine Textzeile ohne Preis- oder Mengenangaben. Diese Position wird über die Checkbox **Kommentar / Block** beim Anlegen aktiviert. Sie dient als Zwischenüberschrift, Trennzeile oder ergänzender Hinweis innerhalb der Positionsliste. Kommentar-/Block-Positionen erscheinen auf dem Beleg, werden aber nicht in die Betragsberechnung einbezogen. Optional können Unterpositionen zugeordnet werden, um Positionen in Gruppen zusammenzufassen.
 
-### Rabattpositon
+### Alternative Position
 
-Eine Position, die einen Rabatt oder Abzug auf den Gesamtauftrag oder eine Gruppe von Positionen abbildet.
+Eine Position, die als **Alternative** gekennzeichnet ist. Sie zeigt dem Kunden eine optionale Variante an, die nicht automatisch in die Gesamtsumme einfließt. Alternativen eignen sich z. B. für Angebote, bei denen der Kunde zwischen verschiedenen Optionen wählen kann.
+
+### Bundle-Position
+
+Eine Position, die Teil eines Produktbündels ist. Bundle-Positionen werden automatisch erstellt, wenn ein Bündelprodukt zum Auftrag hinzugefügt wird. Sie sind nicht direkt bearbeitbar und zeigen die einzelnen Bestandteile des Bündels an.
 
 ## Neue Position hinzufügen
 
+Unterhalb der Positionsliste finden Sie zwei Buttons zum Hinzufügen neuer Positionen:
+
+- **Schnell hinzufügen** - Für schnelles Anlegen mit Produktsuche direkt in der Tabelle
+- **Detailiert hinzufügen** - Öffnet ein ausführliches Formular mit allen Feldern
+
 ### Aus dem Produktkatalog
 
-1. Klicken Sie auf **Position hinzufügen** im Positionsbereich.
+1. Klicken Sie auf **Detailiert hinzufügen** unterhalb der Positionsliste.
 2. Wählen Sie ein **Produkt** über das Suchfeld aus. Beim Tippen werden passende Produkte aus dem Katalog vorgeschlagen.
 3. Name, Beschreibung, Einzelpreis und MwSt-Satz werden automatisch übernommen.
 4. Passen Sie bei Bedarf die **Menge** an.
@@ -56,11 +65,33 @@ Eine Position, die einen Rabatt oder Abzug auf den Gesamtauftrag oder eine Grupp
 
 > **Tipp:** Der Einzelpreis wird automatisch anhand der dem Kontakt zugewiesenen [Preisliste](../14-einstellungen/15-preislisten.md) ermittelt. Sie können den Preis manuell überschreiben.
 
-### Als Freitextposition
+Alternativ können Sie über **Schnell hinzufügen** ein Produkt direkt in der Tabelle suchen und mit einem Klick hinzufügen.
 
-1. Klicken Sie auf **Position hinzufügen**.
+### Als manuelle Position
+
+1. Klicken Sie auf **Detailiert hinzufügen**.
 2. Lassen Sie das Produktfeld leer und geben Sie stattdessen **Name**, **Beschreibung**, **Menge**, **Einzelpreis** und **MwSt-Satz** manuell ein.
 3. Klicken Sie auf **Speichern**.
+
+### Als Kommentar / Block (Textposition)
+
+Eine Kommentar-/Block-Position eignet sich z. B. für Zwischenüberschriften wie „Ausgeführt am 22.10.2025" oder ergänzende Hinweise ohne Preis. Optional können Sie Unterpositionen zuordnen, um Positionen in Gruppen zusammenzufassen.
+
+1. Klicken Sie auf **Detailiert hinzufügen**.
+2. Aktivieren Sie die Checkbox **Kommentar / Block**. Die Preis- und Mengenfelder werden ausgeblendet.
+3. Geben Sie im Feld **Name** den gewünschten Text ein.
+4. Klicken Sie auf **Speichern**.
+
+Per **Drag & Drop** können Sie die Position anschließend an die gewünschte Stelle in der Positionsliste verschieben.
+
+### Als Alternative
+
+Eine Alternativposition zeigt dem Kunden eine optionale Variante, die nicht in die Gesamtsumme einfließt.
+
+1. Klicken Sie auf **Detailiert hinzufügen**.
+2. Wählen Sie optional ein **Produkt** oder geben Sie die Daten manuell ein.
+3. Aktivieren Sie die Checkbox **Alternative**.
+4. Klicken Sie auf **Speichern**.
 
 ## Hierarchische Positionen
 

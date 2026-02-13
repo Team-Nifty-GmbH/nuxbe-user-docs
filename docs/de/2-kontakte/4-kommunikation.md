@@ -72,9 +72,19 @@ Die hier hinterlegten Kontaktmöglichkeiten werden in folgenden Bereichen automa
 - **Auftragsanlage** - Die E-Mail-Adresse der Rechnungsadresse wird als Empfänger für den Belegversand vorgeschlagen.
 - **E-Mail-Versand** - Beim Erstellen einer E-Mail aus Nuxbe wird die primäre E-Mail-Adresse des Kontakts vorausgefüllt.
 - **Kontaktliste** - Die primären Kontaktdaten werden in der Übersicht angezeigt.
+- **Mahnwesen** - Mahnungen werden bevorzugt an die E-Mail-Adresse der **Rechnungsadresse des Auftrags** versendet. Fallback: Rechnungsadresse des Kontakts, dann Hauptadresse des Kontakts.
+
+### Voraussetzung für den E-Mail-Versand von Mahnungen
+
+Der automatische Mahnversand verwendet bevorzugt die E-Mail-Adresse der **Rechnungsadresse des Auftrags**. Ist dort keine E-Mail hinterlegt, wird die **Rechnungsadresse des Kontakts** (`Kontakt > Rechnungsadresse`) geprüft. Ist auch dort keine E-Mail vorhanden, wird die **Hauptadresse** des Kontakts verwendet. Fehlt an allen drei Adressen eine E-Mail-Adresse, kann keine Mahnung per E-Mail versendet werden.
+
+> **Wichtig:** Stellen Sie sicher, dass an der Rechnungsadresse des Auftrags oder zumindest an der Hauptadresse des Kontakts eine gültige E-Mail-Adresse hinterlegt ist. Weitere Informationen finden Sie unter [Adressen](3-adressen.md) und [Mahnungen](../5-buchhaltung/2-mahnungen.md).
+
+Weitere Informationen zum Mahnwesen finden Sie unter [Mahnungen](../5-buchhaltung/2-mahnungen.md).
 
 ## Weiterführende Themen
 
 - [Kontaktdetails](2-kontakt-detail.md) - Zurück zur Kontaktdetailansicht
 - [Adressen](3-adressen.md) - Adressen und deren Kontaktoptionen verwalten
 - [E-Mail](../11-e-mail/0-index.md) - E-Mails direkt aus Nuxbe versenden
+- [Mahnungen](../5-buchhaltung/2-mahnungen.md) - Mahnwesen und Zahlungserinnerungen

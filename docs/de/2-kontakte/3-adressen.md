@@ -28,6 +28,12 @@ Adresstypen legen fest, wofür eine Adresse verwendet wird. Die verfügbaren Typ
 
 Sie können in den Einstellungen beliebige weitere Adresstypen anlegen.
 
+### Verschiedene Rechnungsadressen pro Auftrag
+
+Ein Kontakt kann mehrere Adressen besitzen. Bei der Auftragsanlage wählen Sie aus, welche Adresse als Rechnungsadresse für diesen Auftrag verwendet werden soll. So können verschiedene Rechnungen desselben Kunden an unterschiedliche Abteilungen oder Standorte adressiert werden.
+
+> **Beispiel:** Die Firma „Muster GmbH" hat ihren Hauptsitz in München und eine Niederlassung in Berlin. Legen Sie beide Adressen unter dem Kontakt „Muster GmbH" an und weisen Sie bei der Auftragsanlage jeweils die passende Rechnungsadresse zu.
+
 ## Hauptadresse
 
 Die erste angelegte Adresse eines Kontakts gilt als Hauptadresse. Sie wird standardmäßig für neue Aufträge als Rechnungs- und Lieferadresse übernommen. In der Kontaktliste werden die Daten der Hauptadresse angezeigt.
@@ -82,9 +88,12 @@ Die Kontaktoptionen auf Adressebene funktionieren analog zu den Kontaktoptionen 
 
 Bei der Auftragsanlage werden die Kontaktoptionen der jeweils ausgewählten Adresse herangezogen. So wird sichergestellt, dass die richtige E-Mail-Adresse für den Rechnungsversand verwendet wird.
 
+> **Wichtig:** Für den automatischen E-Mail-Versand von Mahnungen wird bevorzugt die E-Mail-Adresse der **Rechnungsadresse des Auftrags** verwendet. Ist dort keine E-Mail hinterlegt, fällt das System auf die Rechnungsadresse des Kontakts und dann auf die Hauptadresse zurück. Stellen Sie sicher, dass an der jeweiligen Rechnungsadresse eine gültige E-Mail-Adresse hinterlegt ist. Weitere Details finden Sie unter [Mahnungen](../5-buchhaltung/2-mahnungen.md).
+
 ## Weiterführende Themen
 
 - [Kontaktdetails](2-kontakt-detail.md) - Zurück zur Kontaktdetailansicht
 - [Kommunikation](4-kommunikation.md) - Kontaktmöglichkeiten verwalten
 - [Einstellungen > Adresstypen](../14-einstellungen/28-adresstypen.md) - Adresstypen konfigurieren
 - [Einstellungen > Länder](../14-einstellungen/2-laender.md) - Länderliste verwalten
+- [Mahnungen](../5-buchhaltung/2-mahnungen.md) - Mahnwesen und Zahlungserinnerungen
