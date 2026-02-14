@@ -69,6 +69,50 @@ Geben Sie einen Suchbegriff ein, um systemweit nach Datensätzen zu suchen. Die 
 
 Die Ergebnisse werden in Echtzeit gruppiert nach Kategorie angezeigt. Pro Kategorie sehen Sie bis zu fünf Treffer. Klicken Sie auf ein Ergebnis, um direkt zur Detailansicht zu navigieren.
 
+## Richtext-Editor (Texteditor mit Formatierung)
+
+An vielen Stellen in Nuxbe finden Sie Textfelder, die einen Richtext-Editor verwenden. Dieser Editor funktioniert ähnlich wie ein einfaches Textverarbeitungsprogramm und ermöglicht es Ihnen, Texte zu formatieren. Richtext-Editoren finden Sie unter anderem in:
+
+- **Produktbeschreibungen** (siehe [Produktdetails](../6-produkte/3-produkt-detail.md))
+- **E-Mail-Vorlagen** (siehe [E-Mail-Vorlagen](../14-einstellungen/25-email-vorlagen.md))
+- **Ticket-Kommentaren** und anderen Textfeldern
+
+### Werkzeugleiste
+
+![Richtext-Editor-Werkzeugleiste mit Formatierungsoptionen](../screenshots/188-produkt-detail-richtext-editor.png)
+
+Die Werkzeugleiste befindet sich am oberen Rand des Textfelds und bietet folgende Formatierungsmöglichkeiten:
+
+- **Fettschrift** -- Markieren Sie Text und klicken Sie auf das **F**-Symbol (oder drücken Sie Strg+B / Cmd+B)
+- **Kursiv** -- Markieren Sie Text und klicken Sie auf das *K*-Symbol (oder drücken Sie Strg+I / Cmd+I)
+- **Unterstrichen** -- Markieren Sie Text und klicken Sie auf das U-Symbol (oder drücken Sie Strg+U / Cmd+U)
+- **Aufzählung** -- Erstellt eine Liste mit Punkten
+- **Nummerierte Liste** -- Erstellt eine nummerierte Liste
+- **Link einfügen** -- Fügt einen klickbaren Link ein. Markieren Sie zuerst den Text, der als Link angezeigt werden soll, klicken Sie auf das Link-Symbol und geben Sie die URL ein.
+- **Überschriften** -- Erstellt Überschriften in verschiedenen Größen
+
+### HTML-Quellansicht
+
+Für fortgeschrittene Benutzer bieten die meisten Richtext-Editoren in Nuxbe eine HTML-Quellansicht. In dieser Ansicht sehen Sie den rohen HTML-Code hinter dem formatierten Text.
+
+**So wechseln Sie in die HTML-Quellansicht:**
+
+1. Suchen Sie in der Werkzeugleiste die Schaltfläche **Source**, **</>** oder ein ähnliches Quellcode-Symbol.
+2. Klicken Sie darauf. Die Ansicht wechselt von der visuellen Darstellung zum HTML-Quellcode.
+3. Sie sehen nun HTML-Tags wie `<p>`, `<strong>`, `<ul>` etc.
+4. Nehmen Sie Ihre Änderungen direkt im Code vor.
+5. Klicken Sie erneut auf **Source** / **</>**, um zurück zur visuellen Ansicht zu wechseln.
+
+**Wann ist die HTML-Quellansicht nützlich?**
+
+- **Formatierungsprobleme nach Copy & Paste:** Wenn Sie Text aus Word, E-Mails oder Webseiten einfügen, werden oft unsichtbare Formatierungen mitkopiert, die zu unerwünschten Ergebnissen führen. In der Quellansicht können Sie diese überflüssigen Formatierungen entfernen.
+- **Spezielle Formatierungen:** Wenn Sie Tabellen oder andere Elemente einfügen möchten, die über die Werkzeugleiste nicht verfügbar sind.
+- **Fehlersuche:** Wenn Text seltsam dargestellt wird, zeigt Ihnen die Quellansicht, was genau im Hintergrund passiert.
+
+> **Warnung:** Verwenden Sie die HTML-Quellansicht nur, wenn Sie grundlegende HTML-Kenntnisse haben. Fehlerhafter HTML-Code (z. B. vergessene schließende Tags) kann dazu führen, dass die Darstellung in Dokumenten oder E-Mails fehlerhaft ist. Im Zweifelsfall bleiben Sie in der visuellen Ansicht und nutzen Sie die Werkzeugleiste für Formatierungen.
+
+> **Tipp:** Wenn nach dem Einfügen von Text die Formatierung nicht stimmt, ist der einfachste Weg oft: Den gesamten Text markieren, alle Formatierungen entfernen (falls ein solcher Button vorhanden ist), und dann den Text in der visuellen Ansicht neu formatieren. Das ist sicherer als die manuelle Bearbeitung des HTML-Codes.
+
 ## Weiterführende Themen
 
 - [Dashboard](3-dashboard.md) - Ihr persönliches Dashboard einrichten

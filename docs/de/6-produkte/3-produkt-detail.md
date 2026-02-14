@@ -19,6 +19,65 @@ Im Tab **Allgemein** pflegen Sie die Stammdaten und grundlegenden Eigenschaften 
 - **Name** -- Bezeichnung des Produkts
 - **Beschreibung** -- Ausführliche Produktbeschreibung im Richtext-Editor mit Formatierungsmöglichkeiten (Fettschrift, Listen, Links etc.)
 
+### Produktbeschreibung mit Richtext-Editor
+
+Das Feld **Beschreibung** verwendet einen Richtext-Editor, der ähnlich wie ein Textverarbeitungsprogramm (z. B. Microsoft Word) funktioniert. Damit können Sie die Produktbeschreibung formatiert gestalten.
+
+![Richtext-Editor mit Formatierungswerkzeugen in der Produktbeschreibung](../screenshots/188-produkt-detail-richtext-editor.png)
+
+#### Verfügbare Formatierungen
+
+In der Werkzeugleiste des Editors stehen Ihnen folgende Formatierungsmöglichkeiten zur Verfügung:
+
+| Symbol | Funktion | Beschreibung |
+|--------|----------|--------------|
+| **F** | Fettschrift | Markierter Text wird **fett** dargestellt |
+| *K* | Kursiv | Markierter Text wird *kursiv* dargestellt |
+| <u>U</u> | Unterstrichen | Markierter Text wird unterstrichen dargestellt |
+| Liste | Aufzählung | Erstellt eine Liste mit Aufzählungszeichen (Punkten) |
+| 1. 2. 3. | Nummerierte Liste | Erstellt eine nummerierte Liste |
+| Link | Hyperlink | Fügt einen klickbaren Link ein |
+| H1 / H2 | Überschriften | Erstellt Überschriften in verschiedenen Größen |
+
+#### Beschreibung bearbeiten
+
+1. Klicken Sie auf **Bearbeiten** oben rechts, um den Bearbeitungsmodus zu aktivieren.
+2. Klicken Sie in das Beschreibungsfeld.
+3. Schreiben Sie Ihren Text oder markieren Sie vorhandenen Text.
+4. Verwenden Sie die Werkzeugleiste, um Formatierungen anzuwenden.
+5. Klicken Sie auf **Speichern**, wenn Sie fertig sind.
+
+#### Wie die Beschreibung in Aufträgen verwendet wird
+
+Die Produktbeschreibung spielt eine wichtige Rolle bei der Auftragserstellung:
+
+- Wenn Sie ein Produkt zu einem Auftrag (Angebot, Bestellung, Rechnung etc.) hinzufügen, wird die Beschreibung **in die Auftragsposition kopiert**.
+- Ab diesem Zeitpunkt ist die Beschreibung in der Auftragsposition **unabhängig** vom Produkt.
+- Das bedeutet: Wenn Sie die Produktbeschreibung nachträglich ändern, wirkt sich das **nicht** auf bereits erstellte Aufträge aus. Nur bei **neuen** Aufträgen wird die aktualisierte Beschreibung verwendet.
+- Sie können die Beschreibung in jeder Auftragsposition **individuell anpassen**, ohne das Produkt selbst zu verändern. Das ist nützlich, wenn Sie für einen bestimmten Kunden eine abweichende Beschreibung benötigen.
+
+> **Wichtig:** Änderungen an der Produktbeschreibung wirken sich nur auf zukünftige Aufträge aus. Bestehende Aufträge behalten die Beschreibung, die zum Zeitpunkt der Erstellung gültig war. Wenn Sie die Beschreibung in einem bestehenden Auftrag ändern möchten, müssen Sie die Auftragsposition direkt bearbeiten.
+
+#### HTML-Quellansicht für fortgeschrittene Benutzer
+
+Für fortgeschrittene Benutzer bietet der Richtext-Editor eine HTML-Quellansicht. In dieser Ansicht können Sie den zugrundeliegenden HTML-Code direkt bearbeiten. Das kann hilfreich sein, wenn:
+
+- Sie formatierten Text aus einer anderen Anwendung eingefügt haben und die Formatierung bereinigen möchten
+- Sie spezielle HTML-Elemente einfügen möchten (z. B. Tabellen)
+- Sie Formatierungsprobleme beheben möchten, die in der visuellen Ansicht nicht korrbar sind
+
+**So wechseln Sie zur HTML-Quellansicht:**
+
+1. Klicken Sie in der Werkzeugleiste des Editors auf die Schaltfläche **Source** oder **</>** (Quellcode-Symbol).
+2. Die Ansicht wechselt und zeigt den rohen HTML-Code an.
+3. Nehmen Sie Ihre Änderungen direkt im HTML-Code vor.
+4. Klicken Sie erneut auf **Source** oder **</>**, um zur visuellen Ansicht zurückzukehren.
+5. Überprüfen Sie das Ergebnis in der visuellen Ansicht.
+
+> **Warnung:** Verwenden Sie die HTML-Quellansicht nur, wenn Sie grundlegende HTML-Kenntnisse haben. Fehlerhafter HTML-Code kann zu Darstellungsproblemen auf Dokumenten (Rechnungen, Angeboten etc.) führen. Im Zweifelsfall verwenden Sie die visuelle Ansicht und die Werkzeugleiste für Formatierungen.
+
+> **Tipp:** Wenn Sie Text aus einer anderen Anwendung (z. B. Word, E-Mail) kopieren und einfügen, kann es vorkommen, dass unsichtbare Formatierungen mitkopiert werden. Falls die Darstellung nach dem Einfügen seltsam aussieht, wechseln Sie in die HTML-Quellansicht und entfernen Sie überflüssige HTML-Tags, oder markieren Sie den gesamten Text und entfernen Sie die Formatierung über die Werkzeugleiste, bevor Sie ihn neu formatieren.
+
 ### Attribute
 
 Im Abschnitt **Attribute** legen Sie weitere Eigenschaften fest:

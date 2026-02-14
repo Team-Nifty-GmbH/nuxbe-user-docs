@@ -107,6 +107,26 @@ Wenn ein Zeitbudget hinterlegt ist, zeigt ein Fortschrittsbalken das Verhältnis
 
 Wenn die Aufgabe als übergeordnete Aufgabe fungiert, werden hier alle untergeordneten Aufgaben aufgelistet. Für jede Unteraufgabe werden Name, Status und Priorität angezeigt. Klicken Sie auf eine Unteraufgabe, um deren Detailansicht zu öffnen.
 
+### Erinnerungen
+
+Im Bereich **Erinnerungen** können Sie sich oder andere Mitarbeiter an eine Aufgabe erinnern lassen. Erinnerungen werden als Browser-Benachrichtigung und/oder als systeminterne Benachrichtigung zugestellt.
+
+#### Erinnerung einrichten
+
+1. Aktivieren Sie den **Erinnerung**-Toggle in der Detailansicht.
+
+2. Legen Sie das **Datum** und die **Uhrzeit** fest, zu der die Erinnerung ausgelöst werden soll.
+
+3. Klicken Sie auf **Speichern**.
+
+Zum eingestellten Zeitpunkt erhalten Sie eine Benachrichtigung.
+
+#### Browser-Benachrichtigungen
+
+Damit Erinnerungen als Browser-Benachrichtigung auf Ihrem Bildschirm erscheinen, müssen Sie dem Browser die Berechtigung erteilen, Benachrichtigungen anzuzeigen. Wenn Ihr Browser bei der ersten Erinnerung danach fragt, klicken Sie auf **Erlauben**. Ohne diese Berechtigung werden Erinnerungen nur als systeminternes Nachrichtensymbol angezeigt, aber keine Popup-Benachrichtigung auf dem Bildschirm dargestellt.
+
+> **Hinweis:** Browser-Benachrichtigungen funktionieren nur, wenn Nuxbe im Browser geöffnet ist. Wenn Sie den Browser geschlossen haben, werden verpasste Erinnerungen beim nächsten Öffnen nicht nachgeholt.
+
 ### Aktivitäten
 
 Der Bereich **Aktivitäten** zeigt ein Änderungsprotokoll der Aufgabe. Hier werden alle relevanten Änderungen dokumentiert, beispielsweise:

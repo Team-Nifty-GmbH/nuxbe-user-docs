@@ -36,6 +36,16 @@ Ihre persönlichen Kalender. Sie können mehrere persönliche Kalender anlegen, 
 
 Freigegebene Kalender und Teamkalender, die von anderen Benutzern für Sie freigegeben wurden. Hier sehen Sie Termine aus geteilten Kalendern.
 
+### Teamkalender nutzen
+
+Wenn Ihr Administrator Teamkalender eingerichtet hat, erscheinen diese unter **Sonstige**. Teamkalender ermöglichen es, die Termine aller Teammitglieder gleichzeitig einzusehen. Jeder Teamkalender hat eine eigene Farbe, sodass die Termine der verschiedenen Mitarbeiter in der überlagerten Ansicht unterscheidbar sind.
+
+Um die Termine eines gesamten Teams auf einen Blick zu sehen:
+
+1. Blenden Sie alle gewünschten Teamkalender über die Kontrollkästchen in der Seitenleiste ein.
+2. Blenden Sie gegebenenfalls Ihre eigenen Kalender aus, wenn Sie nur die Termine des Teams sehen möchten.
+3. In der Wochenansicht werden die Termine aller eingeblendeten Kalender überlagert dargestellt, unterscheidbar durch ihre jeweilige Farbe.
+
 ### Kalender ein-/ausblenden
 
 Klicken Sie auf einen Kalender in der Seitenleiste, um ihn in der Ansicht ein- oder auszublenden. So können Sie gezielt nur die Kalender anzeigen, die gerade relevant sind.

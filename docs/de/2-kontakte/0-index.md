@@ -69,6 +69,7 @@ Die Detailansicht gliedert sich in mehrere Tabs:
 - [Kontaktdetails](2-kontakt-detail.md) - Detailansicht eines Kontakts mit allen Tabs
 - [Adressen](3-adressen.md) - Adressen eines Kontakts verwalten
 - [Kommunikation](4-kommunikation.md) - Kontaktmöglichkeiten verwalten
+- [Kontakte zusammenführen](5-kontakte-zusammenfuehren.md) - Doppelte Kontakte erkennen und zusammenführen
 
 ## Weiterführende Themen
 

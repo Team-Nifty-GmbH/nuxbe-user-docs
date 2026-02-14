@@ -132,6 +132,161 @@ Die Preisermittlung für Produktpositionen erfolgt automatisch anhand folgender 
 
 Sie können automatisch ermittelte Preise und Rabatte jederzeit manuell überschreiben.
 
+## Rabatt in Euro statt Prozent
+
+Das Feld **Rabatt** auf einer Auftragsposition ist ausschließlich prozentbasiert. Das bedeutet: Wenn Sie dort „10" eingeben, werden 10 % vom Einzelpreis abgezogen. Es gibt **kein eigenes Feld** für einen Rabatt als festen Euro-Betrag.
+
+### Wie gebe ich einen festen Rabatt in Euro?
+
+Wenn Sie einem Kunden einen festen Rabatt in Euro gewähren möchten (z. B. „50 EUR Nachlass"), fügen Sie eine **separate manuelle Position mit negativem Betrag** hinzu. Diese Position erscheint als eigene Zeile auf dem Beleg.
+
+### Schritt-für-Schritt: Festen Euro-Rabatt hinzufügen
+
+1. Öffnen Sie den Auftrag in der [Detailansicht](2-auftrag-detail.md).
+2. Klicken Sie unterhalb der Positionsliste auf **Detailiert hinzufügen**.
+3. Lassen Sie das **Produktfeld leer** (es handelt sich um eine manuelle Position).
+4. Füllen Sie die Felder wie folgt aus:
+
+| Feld | Wert |
+|---|---|
+| **Name** | Kundenrabatt (oder eine andere aussagekräftige Bezeichnung) |
+| **Beschreibung** | Optional, z. B. „Treuerabatt gemäß Vereinbarung vom 15.01.2025" |
+| **Menge** | 1 |
+| **Einzelpreis** | -50,00 (negativer Betrag -- beachten Sie das Minuszeichen!) |
+| **MwSt-Satz** | Wählen Sie den gleichen MwSt-Satz wie bei den regulären Positionen |
+
+5. Klicken Sie auf **Speichern**.
+
+### Ergebnis auf dem Beleg
+
+Die Rabattposition erscheint als eigene Zeile auf dem PDF-Beleg:
+
+| Position | Bezeichnung | Menge | Einzelpreis | Gesamtpreis |
+|---|---|---|---|---|
+| 1 | Laptop-Ständer Modell X | 10 | 50,00 EUR | 500,00 EUR |
+| 2 | Kundenrabatt | 1 | -50,00 EUR | -50,00 EUR |
+| | **Netto-Summe** | | | **450,00 EUR** |
+
+> **Tipp:** Per **Drag & Drop** können Sie die Rabattposition an die gewünschte Stelle in der Positionsliste verschieben -- zum Beispiel direkt unter die Position, auf die sich der Rabatt bezieht. So ist auf dem Beleg klar ersichtlich, welcher Artikel rabattiert wurde.
+
+> **Hinweis:** Beachten Sie, dass ein negativer Einzelpreis auch die MwSt-Berechnung beeinflusst. Der Nettobetrag wird durch den Rabatt reduziert, und entsprechend verringert sich auch der MwSt-Betrag. Das ist buchhalterisch korrekt.
+
+### Unterschied: Positionsrabatt vs. Kopfrabatt vs. manueller Rabatt
+
+Es gibt in Nuxbe drei verschiedene Möglichkeiten, Rabatte zu vergeben. Hier eine Übersicht, damit Sie die richtige Variante wählen:
+
+| Rabattart | Wo eingestellt | Wirkung | Anwendungsfall |
+|---|---|---|---|
+| **Positionsrabatt** (Prozent) | Feld „Rabatt" auf der einzelnen Position | Prozentsatz wird vom Einzelpreis dieser Position abgezogen | Rabatt auf ein bestimmtes Produkt |
+| **Kopfrabatt** (Prozent) | Feld „Kopfrabatt" in den Kopfdaten des Auftrags | Prozentsatz wird auf alle Positionen des Auftrags angewendet | Genereller Rabatt für den gesamten Auftrag |
+| **Manueller Rabatt** (Euro) | Eigene Position mit negativem Betrag | Fester Euro-Betrag wird von der Gesamtsumme abgezogen | Fester Rabattbetrag, Gutscheine, Sonderkonditionen |
+
+> **Wichtig:** Positionsrabatt und Kopfrabatt werden **kumulativ** berechnet. Wenn Sie einen Positionsrabatt von 10 % und einen Kopfrabatt von 5 % haben, wird zuerst der Positionsrabatt angewendet und dann der Kopfrabatt auf den reduzierten Betrag.
+
+---
+
+## MwSt-Satz pro Position ändern
+
+Jede Auftragsposition hat ein eigenes Feld **MwSt-Satz**, das den geltenden Mehrwertsteuersatz für genau diese Position bestimmt. Der MwSt-Satz wird standardmäßig aus dem Produkt übernommen, kann aber auf der Position manuell geändert werden.
+
+### Standardverhalten
+
+- Wenn Sie ein **Produkt aus dem Katalog** hinzufügen, wird der im Produkt hinterlegte MwSt-Satz automatisch übernommen.
+- Bei einer **manuellen Position** (ohne Produkt) müssen Sie den MwSt-Satz selbst auswählen.
+
+### MwSt-Satz auf einer Position ändern
+
+1. Klicken Sie auf die gewünschte Position in der Positionsliste.
+2. Suchen Sie das Feld **MwSt-Satz**.
+3. Wählen Sie den gewünschten Steuersatz aus der Dropdown-Liste aus (z. B. 19 %, 7 %, 0 %).
+4. Klicken Sie auf **Speichern**.
+
+Die Auftragssumme und die MwSt-Aufschlüsselung in der Betragsübersicht werden automatisch neu berechnet.
+
+### Wann ist das relevant?
+
+Es gibt verschiedene Situationen, in denen unterschiedliche MwSt-Sätze innerhalb eines Auftrags benötigt werden:
+
+- **Gemischte Warengruppen:** Lebensmittel (7 % in Deutschland) und Elektronik (19 %) in einer Rechnung.
+- **Steuerbefreite Positionen:** Einzelne Positionen (z. B. Versicherungsleistungen) können steuerfrei sein, während andere besteuert werden.
+- **Innergemeinschaftliche Lieferungen:** Bei Lieferungen ins EU-Ausland kann der Steuersatz für bestimmte Positionen auf 0 % gesetzt werden.
+
+> **Tipp:** Wenn der **gesamte Auftrag** steuerfrei sein soll (z. B. bei Lieferungen in ein Drittland), müssen Sie nicht jede Position einzeln ändern. Verwenden Sie stattdessen das Feld **Steuerbefreiung** in der Sidebar des Auftrags. Dieses Feld setzt automatisch alle Positionen auf 0 % MwSt und druckt den Grund der Steuerbefreiung auf den Beleg.
+
+> **Hinweis:** Wenn mehrere MwSt-Sätze in einem Auftrag verwendet werden, zeigt die Betragsübersicht in der rechten Spalte eine **aufgeschlüsselte MwSt-Darstellung** -- also die MwSt-Beträge getrennt nach Steuersatz. Diese Aufschlüsselung erscheint auch auf dem PDF-Beleg.
+
+### Verfügbare MwSt-Sätze konfigurieren
+
+Die Liste der verfügbaren MwSt-Sätze wird zentral in den Einstellungen verwaltet. Wenn ein benötigter Steuersatz fehlt, kann ein Administrator diesen unter [Einstellungen > MwSt-Sätze](../14-einstellungen/20-mwst-saetze.md) hinzufügen.
+
+---
+
+## Beschreibung mit Platzhaltern
+
+Jede Auftragsposition hat ein Feld **Beschreibung**, das auf dem generierten Beleg (PDF) erscheint. Dieses Feld wird beim Hinzufügen eines Produkts automatisch mit der Beschreibung aus dem Produktkatalog befüllt, kann aber auf der Position frei bearbeitet werden.
+
+### Wie Beschreibungen funktionieren
+
+1. **Beim Hinzufügen eines Produkts:** Die Beschreibung wird aus dem Produktkatalog kopiert und in die Position eingefügt.
+2. **Auf der Position:** Die Beschreibung ist ab diesem Moment **unabhängig vom Produktkatalog**. Änderungen an der Beschreibung auf der Position wirken sich **nicht** auf den Produktkatalog aus. Umgekehrt wirken sich spätere Änderungen am Produktkatalog **nicht** auf bereits erstellte Positionen aus.
+3. **Manuelle Bearbeitung:** Sie können die Beschreibung auf der Position jederzeit frei bearbeiten, kürzen, erweitern oder vollständig umschreiben.
+
+### Platzhalter / dynamische Variablen
+
+Einige Produktbeschreibungen können **Platzhalter** (auch „dynamische Variablen" genannt) enthalten, die beim Erstellen der Position oder beim Generieren des PDF automatisch aufgelöst werden. Mögliche Platzhalter sind:
+
+- **Seriennummern** -- Werden automatisch eingefügt, wenn dem Produkt eine Seriennummer zugeordnet ist.
+- **Datumswerte** -- Können automatisch das aktuelle Datum oder ein Lieferdatum einfügen.
+- **Kundenspezifische Daten** -- Je nach Konfiguration können Kontaktdaten oder andere auftragsbezogene Informationen eingefügt werden.
+
+> **Hinweis:** Welche Platzhalter verfügbar sind, hängt von der Konfiguration Ihres Systems ab. Wenden Sie sich bei Fragen zu verfügbaren Platzhaltern an Ihren Administrator.
+
+### Beschreibung bearbeiten
+
+1. Klicken Sie auf die gewünschte Position in der Positionsliste.
+2. Bearbeiten Sie das Feld **Beschreibung**.
+3. Klicken Sie auf **Speichern**.
+
+> **Wichtig:** Die Änderung der Beschreibung auf einer Position hat **keine Rückwirkung** auf den Produktkatalog. Wenn Sie die Beschreibung eines Produkts dauerhaft ändern möchten, müssen Sie dies direkt im [Produktkatalog](../6-produkte/0-index.md) tun. Bereits erstellte Positionen bleiben davon unberührt.
+
+> **Tipp:** Nutzen Sie das Beschreibungsfeld, um auf der Position kundenspezifische Informationen hinzuzufügen, die nicht im Produktkatalog stehen sollen -- z. B. „Konfiguration gemäß Besprechung vom 10.03.2025" oder „Farbe: RAL 7035, matt".
+
+---
+
+## Positionen aus einem anderen Auftrag kopieren
+
+Es gibt in Nuxbe derzeit keine direkte Funktion, um einzelne Positionen von einem Auftrag in einen anderen zu kopieren. Es gibt jedoch zwei praktische Alternativen, um sich das manuelle Neuanlegen zu ersparen.
+
+### Alternative 1: Gesamten Auftrag duplizieren und anpassen
+
+Wenn der neue Auftrag weitgehend die gleichen Positionen enthalten soll wie ein bestehender Auftrag, ist das Duplizieren die schnellste Methode:
+
+1. Öffnen Sie den **bestehenden Auftrag**, dessen Positionen Sie übernehmen möchten.
+2. Klicken Sie in der Sidebar auf **Duplizieren**.
+3. Nuxbe erstellt eine **Kopie** des Auftrags mit allen Kopfdaten und Positionen.
+4. Passen Sie die Kopie nach Bedarf an:
+   - Ändern Sie den **Kontakt** (Kunden), falls der neue Auftrag für einen anderen Kunden ist.
+   - Entfernen Sie **Positionen**, die nicht benötigt werden.
+   - Fügen Sie **neue Positionen** hinzu.
+   - Passen Sie **Mengen, Preise** oder andere Felder an.
+5. Klicken Sie auf **Speichern**.
+
+> **Tipp:** Das Duplizieren eignet sich besonders gut für wiederkehrende Aufträge, bei denen sich nur wenige Details ändern (z. B. monatliche Wartungsrechnungen, Nachbestellungen usw.).
+
+### Alternative 2: Positionen manuell im neuen Auftrag hinzufügen
+
+Wenn nur wenige Positionen aus einem anderen Auftrag übernommen werden sollen:
+
+1. Öffnen Sie den **bestehenden Auftrag** und notieren Sie sich die relevanten Produktnummern oder Produktnamen.
+2. Wechseln Sie zum **neuen Auftrag** (oder erstellen Sie einen neuen).
+3. Fügen Sie die gewünschten Produkte über **Schnell hinzufügen** oder **Detailiert hinzufügen** aus dem Produktkatalog hinzu. Name, Beschreibung, Preis und MwSt-Satz werden automatisch übernommen.
+4. Passen Sie bei Bedarf Mengen und Preise an.
+5. Klicken Sie auf **Speichern**.
+
+> **Hinweis:** Beim manuellen Hinzufügen werden die aktuellen Daten aus dem Produktkatalog und der aktuellen Preisliste des Kunden verwendet -- nicht die Preise aus dem alten Auftrag. Wenn sich die Preise zwischenzeitlich geändert haben, können die Werte abweichen. Prüfen Sie die Preise daher sorgfältig.
+
+---
+
 ## Weiterführende Themen
 
 - [Auftragsdetails](2-auftrag-detail.md) - Zurück zur Auftragsdetailansicht

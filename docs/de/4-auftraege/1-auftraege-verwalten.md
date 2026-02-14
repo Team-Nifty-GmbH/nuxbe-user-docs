@@ -64,6 +64,31 @@ Gespeicherte Filter eignen sich besonders für wiederkehrende Abfragen wie z. B.
 
 > **Tipp:** Nachdem der Auftrag gespeichert wurde, können Sie in der [Detailansicht](2-auftrag-detail.md) Positionen hinzufügen und den Auftrag weiter bearbeiten.
 
+## Mehrere Aufträge gleichzeitig bearbeiten (Sammelaktionen)
+
+In der Auftragsliste können Sie mehrere Aufträge gleichzeitig auswählen und Sammelaktionen ausführen.
+
+### Aufträge auswählen
+
+1. Aktivieren Sie die Kontrollkästchen in der ersten Spalte der Tabelle, um einzelne Aufträge zu markieren.
+2. Optional: Verwenden Sie das Kontrollkästchen in der Kopfzeile, um alle sichtbaren Aufträge auf einmal auszuwählen.
+
+### Sammelversand per E-Mail
+
+1. Wählen Sie die gewünschten Aufträge aus.
+2. Klicken Sie auf die Schaltfläche **E-Mail senden** in der Aktionsleiste oberhalb der Tabelle.
+3. Für jeden ausgewählten Auftrag wird ein PDF mit dem jeweiligen Drucklayout erstellt und per E-Mail an den hinterlegten Kontakt versendet.
+4. Der Versand wird für jeden Auftrag einzeln im Tab **Kommunikation** der jeweiligen Detailansicht protokolliert.
+
+> **Tipp:** Sammelversand eignet sich besonders für monatliche Rechnungsläufe, bei denen viele Rechnungen gleichzeitig versendet werden sollen.
+
+### Sammeldruck
+
+1. Wählen Sie die gewünschten Aufträge aus.
+2. Klicken Sie auf **Drucken** in der Aktionsleiste.
+3. Wählen Sie das gewünschte Drucklayout.
+4. Die PDFs werden für alle ausgewählten Aufträge erzeugt.
+
 ## Auftrag duplizieren
 
 Um einen bestehenden Auftrag als Vorlage zu nutzen:

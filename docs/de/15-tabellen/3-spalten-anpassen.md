@@ -38,6 +38,20 @@ Neben den Standardspalten eines Datensatzes können Sie auch Spalten aus verknü
 
 > **Hinweis:** Relationsspalten können die Ladezeit der Tabelle leicht erhöhen, da zusätzliche Daten abgerufen werden müssen. Fügen Sie nur die Spalten hinzu, die Sie tatsächlich benötigen.
 
+### Beispiel: Kommentare als Spalte einblenden
+
+Ein häufiger Anwendungsfall ist das Einblenden von Kommentardaten, um z. B. zu sehen, wann der letzte Kommentar zu einem Datensatz verfasst wurde:
+
+1. Öffnen Sie die Seitenleiste über das **Zahnrad-Symbol** und wechseln Sie zum Tab **Spalten**.
+
+2. In der rechten Spaltenliste finden Sie den Abschnitt **Kommentare**. Klicken Sie darauf, um ihn aufzuklappen.
+
+3. Aktivieren Sie das Kontrollkästchen neben **Erstellt am**.
+
+4. Die neue Spalte **Kommentare → Erstellt am** erscheint ganz rechts in der Tabelle.
+
+Sie können diese Spalte nun wie gewohnt filtern, z. B. mit `>=15.01.2026`, um alle Datensätze mit Kommentaren ab einem bestimmten Datum zu finden. Weitere Informationen zu Filteroperatoren finden Sie unter [Filtern](2-filtern.md).
+
 ## Spaltenanordnung
 
 Die Reihenfolge der Spalten in der Tabelle entspricht der Reihenfolge in der Spaltenliste der Seitenleiste. Die ersten aktivierten Spalten erscheinen links, die später aktivierten rechts.
