@@ -74,6 +74,18 @@ Nach dem Speichern werden Kundennummer, Debitorennummer und ggf. Kreditorennumme
 
 Gelöschte Kontakte werden per Soft Delete entfernt und können bei Bedarf wiederhergestellt werden.
 
+### Gelöschten Kontakt wiederherstellen
+
+Wenn ein Kontakt versehentlich gelöscht wurde, können Sie ihn wiederherstellen:
+
+1. Navigieren Sie zur Kontaktliste.
+2. Aktivieren Sie den Filter, um gelöschte Kontakte anzuzeigen (über die Seitenleiste bzw. das Filtermenü).
+3. Suchen Sie den gelöschten Kontakt in der Liste.
+4. Klicken Sie auf den Kontakt, um die Detailansicht zu öffnen.
+5. Klicken Sie auf **Wiederherstellen**.
+
+Der Kontakt wird wiederhergestellt und ist erneut in der regulären Kontaktliste sichtbar. Alle verknüpften Daten (Aufträge, Adressen, Kommunikation) bleiben erhalten.
+
 ## Weiterführende Themen
 
 - [Kontaktdetails](2-kontakt-detail.md) - Einzelnen Kontakt im Detail ansehen und bearbeiten

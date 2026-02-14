@@ -166,13 +166,13 @@ Split-Aufträge sind Teilaufträge, die als untergeordnete Aufträge dem Hauptau
 
 Weitere Details finden Sie unter [Split-Aufträge](8-split-auftraege.md).
 
-### Endrechnung erstellen
+### Schlussrechnung erstellen
 
-Eine Endrechnung ist ein spezieller Beleg, der alle bereits erstellten Teil- oder Split-Rechnungen zusammenfasst. Diese Option ist nur verfügbar, wenn mindestens ein Split-Auftrag mit eigener Rechnungsnummer existiert.
+Eine Schlussrechnung ist ein spezieller Beleg, der alle bereits erstellten Teil- oder Split-Rechnungen zusammenfasst. Diese Option ist nur verfügbar, wenn alle Split-Aufträge eine eigene Rechnungsnummer haben.
 
 1. Öffnen Sie den übergeordneten Auftrag.
-2. Die Option **Endrechnung** erscheint, wenn Split-Aufträge mit Rechnungsnummer vorhanden sind.
-3. Die Endrechnung berücksichtigt alle bereits abgerechneten Teilbeträge.
+2. Die Option **Schlussrechnung** erscheint unter **Dokumente erstellen**, wenn alle Split-Aufträge eine Rechnungsnummer haben.
+3. Die Schlussrechnung berücksichtigt alle bereits abgerechneten Teilbeträge.
 
 ## Rabattverwaltung
 
@@ -237,7 +237,7 @@ In der rechten Spalte finden Sie folgende Datumsfelder:
 Für Aufträge stehen folgende Drucklayouts zur Verfügung:
 
 - **Rechnung** -- Standard-Rechnungsbeleg
-- **Endrechnung** -- Zusammenfassende Rechnung über alle Split-Aufträge
+- **Schlussrechnung** -- Zusammenfassende Rechnung über alle Split-Aufträge
 - **Angebot** -- Angebotsbeleg
 - **Auftragsbestätigung** -- Bestätigung des Auftrags
 - **Lieferschein** -- Lieferschein für den Versand
@@ -259,7 +259,7 @@ Für Aufträge stehen folgende Drucklayouts zur Verfügung:
 2. **Split-Auftrag für erste Teillieferung** erstellen.
 3. **Rechnung für den Split-Auftrag** erstellen.
 4. Weitere Split-Aufträge für weitere Teillieferungen erstellen.
-5. **Endrechnung** erstellen, wenn alle Lieferungen abgeschlossen sind.
+5. **Schlussrechnung** erstellen, wenn alle Lieferungen abgeschlossen sind.
 
 ## Weiterführende Themen
 

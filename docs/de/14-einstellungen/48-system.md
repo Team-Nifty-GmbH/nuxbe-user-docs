@@ -103,13 +103,47 @@ Listet installierte PHP-Erweiterungen auf:
 
 ## Cache leeren
 
-Cache-Verwaltung verbessert die Performance und behebt manchmal Anzeigeprobleme.
+![Cache-Verwaltung in den Systemeinstellungen](../screenshots/187-einstellungen-systemeinstellungen.png)
 
-1. Wählen Sie im Widget **Cache-Verwaltung** die gewünschte Option.
-2. Klicken Sie auf die entsprechende Schaltfläche (z.B. **Anwendungs-Cache leeren**).
-3. Warten Sie auf die Bestätigung.
+### Was ist der Cache und wozu dient er?
 
-Nach dem Leeren eines Caches kann die Anwendung vorübergehend langsamer reagieren, da Daten neu geladen werden müssen.
+Der Cache ist ein Zwischenspeicher, in dem Nuxbe häufig benötigte Daten ablegt, damit die Anwendung schneller reagieren kann. Anstatt Daten jedes Mal neu aus der Datenbank oder den Konfigurationsdateien zu laden, greift das System auf den Cache zurück. Das beschleunigt die Anwendung erheblich.
+
+Manchmal kann es jedoch vorkommen, dass der Cache veraltete Daten enthält. In solchen Fällen muss er geleert werden, damit das System die aktuellen Daten neu laden kann.
+
+> **Wichtig:** Das Leeren des Caches löscht **keine** Ihrer Daten. Es werden keine Aufträge, Kontakte, Produkte oder andere Geschäftsdaten gelöscht. Es wird lediglich der Zwischenspeicher geleert, sodass das System Konfigurationen und Darstellungen neu aufbaut.
+
+### Wann sollte ich den Cache leeren?
+
+Leeren Sie den Cache in folgenden Situationen:
+
+| Situation | Empfohlene Cache-Aktion |
+|-----------|------------------------|
+| **Nach einem System-Update** | Alle Caches leeren |
+| **Änderungen an Einstellungen werden nicht übernommen** | Konfigurations-Cache leeren |
+| **Seiten werden nicht korrekt dargestellt** | View-Cache leeren |
+| **Menüpunkte oder Links funktionieren nicht richtig** | Route-Cache leeren |
+| **Allgemein unerwartetes Verhalten** | Alle Caches leeren |
+| **Das System verhält sich nach einer Änderung wie vorher** | Anwendungs-Cache leeren |
+
+### Cache leeren -- Schritt für Schritt
+
+1. Navigieren Sie zu **Einstellungen > System > Systemeinstellungen**.
+2. Suchen Sie das Widget **Cache-Verwaltung**.
+3. Sie haben folgende Optionen:
+
+   - **Anwendungs-Cache leeren** -- Löscht den allgemeinen Zwischenspeicher der Anwendung. Das ist die häufigste und sicherste Option.
+   - **Konfigurations-Cache leeren** -- Löscht den Zwischenspeicher für Systemeinstellungen. Verwenden Sie dies, wenn Änderungen an den Einstellungen nicht wirksam werden.
+   - **Route-Cache leeren** -- Löscht den Zwischenspeicher für Seitenlinks und Navigation. Verwenden Sie dies, wenn Links nicht funktionieren oder auf falsche Seiten führen.
+   - **View-Cache leeren** -- Löscht kompilierte Ansichtsdateien (Blade-Templates). Verwenden Sie dies, wenn Seiten fehlerhaft dargestellt werden.
+   - **Alle Caches leeren** -- Löscht alle oben genannten Caches gleichzeitig. Dies ist die sicherste Option, wenn Sie unsicher sind, welcher Cache das Problem verursacht.
+
+4. Klicken Sie auf die gewünschte Schaltfläche.
+5. Warten Sie auf die Bestätigungsmeldung.
+
+> **Hinweis:** Nach dem Leeren des Caches kann die Anwendung für einige Sekunden bis Minuten **etwas langsamer** reagieren. Das ist normal, da das System alle Daten neu aufbauen muss. Nach kurzer Zeit erreicht die Anwendung wieder ihre normale Geschwindigkeit.
+
+> **Tipp:** Wenn Sie unsicher sind, welchen Cache Sie leeren sollen, verwenden Sie einfach **Alle Caches leeren**. Das ist die einfachste und sicherste Methode. Es dauert nur etwas länger, bis das System wieder volle Geschwindigkeit erreicht.
 
 ## Wartungsmodus aktivieren
 
