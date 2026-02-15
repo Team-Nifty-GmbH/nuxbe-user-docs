@@ -19,7 +19,7 @@ MwSt.-Sätze legen fest, mit welchem Prozentsatz die Mehrwertsteuer auf Produkte
 1. Klicken Sie auf **Neu**.
 2. Geben Sie den **Namen** ein (z. B. "MwSt. 19%", "MwSt. 7%", "Steuerfrei").
 3. Tragen Sie den **Prozentsatz** ein (z. B. 19,00 für 19 %).
-4. Optional: Fügen Sie einen **Fußzeilentext** hinzu. Dieser erscheint auf Dokumenten mit diesem Steuersatz.
+4. Optional: Fügen Sie einen **Fußzeilentext** hinzu. Dieser erscheint auf Dokumenten mit diesem Steuersatz. Im Fußzeilentext können Sie [Editor-Variablen](../1-erste-schritte/6-editor-variablen.md) verwenden, um dynamische Werte wie die USt-IdNr. des Kunden automatisch einzufügen.
 5. Aktivieren Sie **Ist Standard**, wenn dieser Steuersatz automatisch vorausgewählt werden soll.
 6. Aktivieren Sie **Ist Steuerbefreiung**, wenn es sich um einen steuerbefreiten Vorgang handelt (z. B. für innergemeinschaftliche Lieferungen).
 7. Klicken Sie auf **Speichern**.
@@ -42,10 +42,11 @@ MwSt.-Sätze können nur gelöscht werden, wenn sie nicht in Aufträgen oder Auf
 - **7 %** - Ermäßigter Steuersatz (z. B. Lebensmittel, Bücher)
 - **0 %** - Steuerfreie Lieferungen (z. B. Exporte, innergemeinschaftliche Lieferungen)
 
-> **Hinweis:** Es kann nur ein MwSt.-Satz als Standard markiert sein. Wenn Sie einen anderen Satz als Standard festlegen, wird der bisherige Standard automatisch deaktiviert. Der Fußzeilentext wird auf Rechnungen und Angeboten ausgegeben und kann z. B. gesetzliche Hinweise enthalten.
+> **Hinweis:** Es kann nur ein MwSt.-Satz als Standard markiert sein. Wenn Sie einen anderen Satz als Standard festlegen, wird der bisherige Standard automatisch deaktiviert. Der Fußzeilentext wird auf Rechnungen und Angeboten ausgegeben und kann z. B. gesetzliche Hinweise enthalten. Nutzen Sie [Editor-Variablen](../1-erste-schritte/6-editor-variablen.md), um dynamische Daten wie die USt-IdNr. des Kunden einzubinden.
 
 ## Weiterführende Themen
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
+- [Editor-Variablen](../1-erste-schritte/6-editor-variablen.md) - Dynamische Variablen in Textfeldern verwenden
 - [Buchhaltung](../5-buchhaltung/0-index.md) - Buchhaltungsmodul verwenden
 - [Buchungskonten](19-buchungskonten.md) - Kontenrahmen verwalten

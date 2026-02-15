@@ -36,12 +36,7 @@ Der Kündigungstext wird in automatischen Benachrichtigungen verwendet, wenn:
 - Ein Abonnement automatisch ausläuft
 - Eine Kündigungsbestätigung verschickt wird
 
-Sie können Platzhalter verwenden, um dynamische Inhalte einzufügen:
-
-- `{kunde}` - Name des Kunden
-- `{vertragsnummer}` - Nummer des Abonnements
-- `{kuendigungsdatum}` - Datum der Kündigung
-- `{laufzeitende}` - Ende der aktuellen Laufzeit
+Im Kündigungstext können Sie [Editor-Variablen](../1-erste-schritte/6-editor-variablen.md) verwenden, um dynamische Werte wie Abo-Daten oder Kundendaten automatisch einzufügen. Klicken Sie dazu auf die Variablen-Schaltfläche in der Editor-Werkzeugleiste.
 
 ## Besonderheiten
 
@@ -67,6 +62,7 @@ Wiederkehrende Aufträge nutzen Zeitpläne (Schedules), die festlegen:
 ## Weiterführende Themen
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
+- [Editor-Variablen](../1-erste-schritte/6-editor-variablen.md) - Dynamische Variablen im Kündigungstext verwenden
 - [Abonnements](../4-auftraege/5-auftragsarten/4-abonnements.md) - Abonnements erstellen, Zeitpläne einrichten und kündigen
 - [Aufträge](../4-auftraege/0-index.md) - Aufträge verwalten
 - [Auftragsarten](11-auftragsarten.md) - Dokumenttypen definieren

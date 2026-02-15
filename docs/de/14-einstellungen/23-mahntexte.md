@@ -39,16 +39,9 @@ Mahnstufen bauen aufeinander auf:
 
 Das System wählt automatisch den Text der höchsten verfügbaren Mahnstufe, die kleiner oder gleich der aktuellen Mahnstufe ist.
 
-## Platzhalter für dynamische Inhalte
+## Dynamische Inhalte mit Editor-Variablen
 
-In Mahntexten können Sie Platzhalter verwenden, die beim Erstellen der Mahnung durch echte Daten ersetzt werden:
-
-- Kundendaten (Name, Anschrift)
-- Rechnungsnummer und Rechnungsdatum
-- Fälliges Datum und überfälliger Betrag
-- Aktuelle Mahnstufe und Mahngebühr
-
-> **Tipp:** Die genaue Syntax für Platzhalter hängt von der verwendeten E-Mail-Vorlage ab. Prüfen Sie die Dokumentation der E-Mail-Vorlagen für verfügbare Variablen.
+Im Mahntext können Sie [Editor-Variablen](../1-erste-schritte/6-editor-variablen.md) verwenden, um dynamische Werte einzufügen, die beim Erstellen der Mahnung automatisch durch die echten Daten ersetzt werden. Klicken Sie dazu auf die Variablen-Schaltfläche in der Editor-Werkzeugleiste, um die verfügbaren Variablen anzuzeigen und einzufügen.
 
 ## Beispieltext für Mahnstufe 1
 
@@ -70,6 +63,7 @@ Mit freundlichen Grüßen
 ## Weiterführende Themen
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
+- [Editor-Variablen](../1-erste-schritte/6-editor-variablen.md) - Dynamische Variablen in Textfeldern verwenden
 - [Mahnungen](../5-buchhaltung/2-mahnungen.md) - Mahnungen verwalten
 - [Mahneinstellungen](24-mahneinstellungen.md) - Mahnfristen und Gebühren konfigurieren
 - [E-Mail-Vorlagen](25-email-vorlagen.md) - E-Mail-Vorlagen verwalten

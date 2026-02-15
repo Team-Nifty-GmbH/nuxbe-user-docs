@@ -9,3 +9,4 @@ Dieser Abschnitt führt Sie durch die grundlegenden Funktionen von Nuxbe. Sie le
 - [Dashboard](3-dashboard.md) - Widgets, Tabs, Zeitraumfilter und Bearbeitungsmodus
 - [Mein Profil](4-mein-profil.md) - Persönliche Daten, Sprache, Passwort, Benachrichtigungskanäle und Push-Benachrichtigungen
 - [Merklisten](5-merklisten.md) - Produkte auf Merklisten speichern und verwalten
+- [Editor-Variablen](6-editor-variablen.md) - Dynamische Variablen in Textfeldern verwenden
