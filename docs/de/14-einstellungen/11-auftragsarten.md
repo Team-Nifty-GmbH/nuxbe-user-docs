@@ -23,8 +23,8 @@ Auftragsarten definieren die verschiedenen Dokumenttypen im System wie Angebot, 
    - **Typ** - Wählen Sie den Dokumenttyp (Angebot, Auftrag, Lieferschein, Rechnung, Gutschrift, etc.)
    - **Beschreibung** - Optional eine erklärende Beschreibung
    - **E-Mail-Vorlage** - Wählen Sie eine Vorlage für automatische E-Mails
-   - **Kopfzeile** - Optionaler Text für die Dokumentenkopfzeile
-   - **Fußzeile** - Optionaler Text für die Dokumentenfußzeile
+   - **Kopfzeile** - Optionaler Text für die Dokumentenkopfzeile. Unterstützt [Editor-Variablen](../1-erste-schritte/6-editor-variablen.md).
+   - **Fußzeile** - Optionaler Text für die Dokumentenfußzeile. Unterstützt [Editor-Variablen](../1-erste-schritte/6-editor-variablen.md).
    - **Drucklayouts** - Wählen Sie die zu verwendenden Druckvorlagen
    - **Lagerbuchung Drucklayouts** - Layouts für Lagerbuchungen nach Dokumenterstellung
    - **Lagerreservierung Drucklayouts** - Layouts für Lagerreservierungen
@@ -66,5 +66,6 @@ Bei aktivierter Lagerbuchung werden bei Dokumenterstellung automatisch die Lager
 ## Weiterführende Themen
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
+- [Editor-Variablen](../1-erste-schritte/6-editor-variablen.md) - Dynamische Variablen in Kopf- und Fußzeilen verwenden
 - [Aufträge](../4-auftraege/0-index.md) - Aufträge verwalten
 - [Zahlungsarten](12-zahlungsarten.md) - Zahlungskonditionen definieren
