@@ -184,9 +184,15 @@ Je nach Auftragsart und Status stehen verschiedene Aktionen zur Verfügung:
 Beim Erstellen eines PDFs können Sie dieses direkt per E-Mail versenden:
 
 1. Erstellen Sie das PDF wie oben beschrieben.
-2. Wählen Sie die Option zum E-Mail-Versand.
-3. Die für die Auftragsart hinterlegte E-Mail-Vorlage wird automatisch verwendet. Die Empfänger-Adresse wird aus der Rechnungsadresse des Auftrags übernommen.
+2. Wählen Sie die Option zum E-Mail-Versand. Es öffnet sich das **E-Mail-Fenster** mit folgenden Feldern:
+   - **Absender** - Das konfigurierte E-Mail-Konto, von dem gesendet wird.
+   - **Empfänger** - Wird automatisch aus der Rechnungsadresse des Auftrags übernommen und kann angepasst werden.
+   - **Betreff** und **Nachrichtentext** - Werden automatisch aus der **E-Mail Vorlage** befüllt, die an der **Auftragsart** hinterlegt ist.
+   - **Anhänge** - Das erstellte PDF wird automatisch als Anhang hinzugefügt.
+3. Prüfen Sie die Angaben, passen Sie bei Bedarf Empfänger oder Text an und klicken Sie auf **Senden**.
 4. Der Versand wird im Tab **Kommunikation** protokolliert.
+
+> **Wichtig:** Damit Betreff und Nachrichtentext automatisch befüllt werden, muss an der **Auftragsart** eine **E-Mail Vorlage** hinterlegt sein. Die Konfiguration erfolgt unter [Einstellungen > Aufträge > Auftragsarten](../14-einstellungen/11-auftragsarten.md).
 
 ### PDF nach Änderungen neu erstellen
 

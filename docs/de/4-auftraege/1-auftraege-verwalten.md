@@ -77,8 +77,17 @@ In der Auftragsliste können Sie mehrere Aufträge gleichzeitig auswählen und S
 
 1. Wählen Sie die gewünschten Aufträge aus.
 2. Klicken Sie auf die Schaltfläche **E-Mail senden** in der Aktionsleiste oberhalb der Tabelle.
-3. Für jeden ausgewählten Auftrag wird ein PDF mit dem jeweiligen Drucklayout erstellt und per E-Mail an den hinterlegten Kontakt versendet.
-4. Der Versand wird für jeden Auftrag einzeln im Tab **Kommunikation** der jeweiligen Detailansicht protokolliert.
+3. Es öffnet sich das **E-Mail-Fenster**. Hier sehen Sie folgende Felder:
+   - **Absender** - Das konfigurierte E-Mail-Konto, von dem gesendet wird.
+   - **Empfänger** - Beim Sammelversand ist dieses Feld ausgegraut und nicht bearbeitbar. Der Empfänger wird für jeden Auftrag **individuell** aus der hinterlegten Rechnungsadresse des jeweiligen Auftrags ermittelt. So wird sichergestellt, dass jeder Kunde seine eigene E-Mail erhält.
+   - **Betreff** - Wird automatisch aus der **E-Mail Vorlage** der jeweiligen **Auftragsart** befüllt.
+   - **E-Mail Vorlage** - Die Vorlage, die für den Inhalt und Betreff der E-Mail verwendet wird. Wird automatisch vorausgewählt, wenn an der Auftragsart eine **E-Mail Vorlage** hinterlegt ist (siehe [Auftragsarten-Einstellungen](../14-einstellungen/11-auftragsarten.md)).
+   - **Nachrichtentext** - Der E-Mail-Inhalt, der aus der Vorlage generiert wird. Platzhalter (z. B. Rechnungsnummer, Kundenname) werden beim Versand für jeden Auftrag einzeln ersetzt.
+4. Prüfen Sie die Angaben und klicken Sie auf **Senden**.
+5. Für jeden ausgewählten Auftrag wird ein PDF mit dem jeweiligen Drucklayout erstellt und zusammen mit der personalisierten E-Mail an den hinterlegten Kontakt versendet.
+6. Der Versand wird für jeden Auftrag einzeln im Tab **Kommunikation** der jeweiligen [Detailansicht](2-auftrag-detail.md) protokolliert.
+
+> **Wichtig:** Damit die Felder im E-Mail-Fenster automatisch befüllt werden, muss an der jeweiligen **Auftragsart** eine **E-Mail Vorlage** hinterlegt sein. Ist keine Vorlage konfiguriert, bleiben Betreff und Nachrichtentext leer. Die Konfiguration erfolgt unter [Einstellungen > Aufträge > Auftragsarten](../14-einstellungen/11-auftragsarten.md).
 
 > **Tipp:** Sammelversand eignet sich besonders für monatliche Rechnungsläufe, bei denen viele Rechnungen gleichzeitig versendet werden sollen.
 
