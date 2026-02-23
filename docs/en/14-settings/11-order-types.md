@@ -27,6 +27,16 @@ Manage the different order types such as quotes, orders, invoices and credit not
 - Click **Edit** to modify an existing order type.
 - Click **Delete** to remove an order type.
 
+## Tenant Assignment
+
+Each order type is assigned to a specific tenant. This has the following implications:
+
+- When **creating** a new order, only order types belonging to the selected tenant are available.
+- When **duplicating** an order, only order types from the same tenant as the original order can be selected.
+- The order type's tenant assignment cannot be changed after creation.
+
+> **Note:** If you cannot select a particular order type when duplicating an order, check under **Settings > Orders > Order Types** whether the desired order type is assigned to the correct tenant.
+
 ## Related Topics
 
 - [Orders](../4-orders/0-index.md) - Manage orders
