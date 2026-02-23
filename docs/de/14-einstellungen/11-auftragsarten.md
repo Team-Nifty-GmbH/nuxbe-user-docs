@@ -49,6 +49,16 @@ Auftragsarten definieren die verschiedenen Dokumenttypen im System wie Angebot, 
 
 ## Besonderheiten
 
+### Mandantenzuordnung
+
+Jede Auftragsart ist einem bestimmten Mandanten zugeordnet. Diese Zuordnung hat folgende Auswirkungen:
+
+- Beim **Erstellen** eines neuen Auftrags werden nur Auftragsarten angeboten, die zum gewählten Mandanten gehören.
+- Beim **Duplizieren** eines Auftrags können nur Auftragsarten des gleichen Mandanten wie der Originalauftrag gewählt werden.
+- Die Auftragsart kann nachträglich nicht auf eine andere Mandantenzuordnung geändert werden.
+
+> **Hinweis:** Wenn Sie beim Duplizieren eine bestimmte Auftragsart nicht auswählen können, prüfen Sie unter **Einstellungen > Aufträge > Auftragsarten**, ob die gewünschte Auftragsart dem richtigen Mandanten zugeordnet ist.
+
 ### Nummernkreise
 
 Jede Auftragsart kann einen eigenen Nummernkreis verwenden. Dies wird über die zugeordnete Nummernserie gesteuert, die ein Präfix und eine fortlaufende Nummer definiert.

@@ -104,8 +104,12 @@ Um einen bestehenden Auftrag als Vorlage zu nutzen:
 
 1. Öffnen Sie den gewünschten Auftrag in der [Detailansicht](2-auftrag-detail.md).
 2. Klicken Sie auf **Duplizieren**.
-3. Ein neuer Auftrag wird mit denselben Kopfdaten und Positionen erstellt.
-4. Passen Sie die Daten nach Bedarf an und klicken Sie auf **Speichern**.
+3. Es öffnet sich ein Dialog, in dem Sie die **Auftragsart** für den neuen Auftrag auswählen können. Standardmäßig ist die Auftragsart des Originals vorausgewählt.
+4. Wählen Sie die gewünschte Auftragsart und bestätigen Sie.
+5. Ein neuer Auftrag wird mit denselben Kopfdaten und Positionen erstellt.
+6. Passen Sie die Daten nach Bedarf an und klicken Sie auf **Speichern**.
+
+> **Wichtig:** Beim Duplizieren können Sie nur Auftragsarten auswählen, die **demselben Mandanten** zugeordnet sind wie der ursprüngliche Auftrag. Auftragsarten anderer Mandanten werden nicht angeboten. Wenn Sie einen Auftrag für einen anderen Mandanten benötigen, erstellen Sie stattdessen einen neuen Auftrag über die Schaltfläche **Neu** und wählen dort den gewünschten Mandanten und die Auftragsart.
 
 ## Weiterführende Themen
 
