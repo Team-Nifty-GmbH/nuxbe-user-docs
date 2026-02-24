@@ -98,6 +98,24 @@ In der Auftragsliste können Sie mehrere Aufträge gleichzeitig auswählen und S
 3. Wählen Sie das gewünschte Drucklayout.
 4. Die PDFs werden für alle ausgewählten Aufträge erzeugt.
 
+### Vorschau erstellen
+
+Mit der **Vorschau** können Sie PDFs erzeugen, ohne dabei eine echte Rechnung oder ein anderes Dokument zu erstellen. Die Vorschau-PDFs enthalten **keine echte Rechnungsnummer und kein Rechnungsdatum** -- sie dienen ausschließlich zur Kontrolle, wie das fertige Dokument aussehen wird.
+
+1. Wählen Sie die gewünschten Aufträge aus.
+2. Klicken Sie auf **Dokumente erstellen** in der Aktionsleiste unterhalb der Tabelle.
+3. Im Dialog **Dokumente erstellen** sehen Sie für jedes verfügbare Drucklayout eine Zeile mit den Spalten **E-Mail**, **Herunterladen**, **Vorschau** und **Erstellen erzwingen**.
+4. Aktivieren Sie das Kontrollkästchen in der Spalte **Vorschau** für das gewünschte Layout (z. B. **Rechnung**).
+
+   ![Dialog Dokumente erstellen mit aktivierter Vorschau für Rechnung](../screenshots/55-dokumente-erstellen-vorschau.png)
+
+5. Klicken Sie auf **Fortsetzen**.
+6. Die Vorschau-PDFs werden erzeugt und Ihnen als Download bereitgestellt.
+
+> **Hinweis:** Wenn Sie **nur** die Spalte **Vorschau** aktivieren, wird kein echtes Dokument erstellt und keine Rechnungsnummer vergeben. So können Sie vorab prüfen, ob alle Daten und Positionen korrekt sind, bevor Sie die endgültige Rechnung erzeugen.
+
+> **Tipp:** Sie können die **Vorschau** auch mit anderen Optionen kombinieren. Aktivieren Sie z. B. zusätzlich **E-Mail** oder **Herunterladen**, um neben der Vorschau gleichzeitig das endgültige Dokument zu erstellen und zu versenden.
+
 ## Auftrag duplizieren
 
 Um einen bestehenden Auftrag als Vorlage zu nutzen:
