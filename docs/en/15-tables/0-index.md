@@ -46,6 +46,7 @@ The pagination shows the current page number and the total number of results. Yo
 - [Grouping](5-grouping.md) — Group data by columns
 - [Exporting](6-exporting.md) — Export table contents as a file
 - [Selecting Rows](7-selecting-rows.md) — Select one or more rows for actions
+- [Deleted Records](8-deleted-records.md) — Show deleted entries and restore them
 
 ## Related Topics
 

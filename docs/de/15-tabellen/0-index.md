@@ -46,6 +46,7 @@ Die Paginierung zeigt die aktuelle Seitennummer und die Gesamtanzahl der Seiten.
 - [Gruppieren](5-gruppieren.md) - Daten nach Spalten gruppieren
 - [Exportieren](6-exportieren.md) - Tabelleninhalte als Datei exportieren
 - [Zeilen auswählen](7-zeilen-auswaehlen.md) - Einzelne oder mehrere Zeilen für Aktionen markieren
+- [Gelöschte Datensätze](8-geloeschte-datensaetze.md) - Gelöschte Einträge anzeigen und wiederherstellen
 
 ## Weiterführende Themen
 
