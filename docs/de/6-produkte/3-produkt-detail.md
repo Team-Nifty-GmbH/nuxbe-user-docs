@@ -195,6 +195,29 @@ Im Tab **Bundleprodukte** definieren Sie ein Produkt als Bündelprodukt, das aus
 - Für jede Komponente geben Sie das Produkt und die enthaltene Menge an.
 - Beim Verkauf eines Bundleprodukts werden die Lagerbestände der Einzelkomponenten entsprechend reduziert.
 
+### Preislogik bei Bundleprodukten
+
+Der **Preis wird ausschließlich am Bundleprodukt selbst** festgelegt — nicht an den einzelnen Komponenten. Wenn Sie ein Bundleprodukt zu einem Auftrag hinzufügen, passiert Folgendes:
+
+- Die Hauptposition zeigt den **Gesamtpreis des Bundles** an.
+- Die Komponenten werden als Unterpositionen aufgelistet, haben aber **keinen eigenen Preis**.
+- Im Kundendokument (Angebot, Rechnung) wird nur die Hauptposition mit dem Gesamtpreis angezeigt.
+
+> **Wichtig:** Wenn ein Bundleprodukt im Angebot mit 0 € erscheint, ist der Preis am Produkt selbst nicht hinterlegt. Prüfen Sie in diesem Fall den Preis des Bundleprodukts in der [Preisliste](../14-einstellungen/15-preislisten.md) oder im Feld **Einzelpreis** des Produkts.
+
+### Bundle vs. Gruppe — Wann was verwenden?
+
+Neben dem Bundleprodukt gibt es auch die Möglichkeit, Positionen über eine **Textposition (Kommentar / Block)** mit Unterpositionen zu gruppieren. Die beiden Ansätze unterscheiden sich grundlegend:
+
+| | **Bundleprodukt** | **Gruppe (Textposition)** |
+|---|---|---|
+| **Konfiguration** | Komponenten im Tab **Bundleprodukte** am Produkt hinterlegen | **Kommentar / Block** im Auftrag anlegen und Unterpositionen manuell zuordnen |
+| **Preis** | Liegt am Bundle selbst, Komponenten haben keinen Preis | Liegt auf den einzelnen Unterpositionen |
+| **Im Kundendokument** | Nur Gesamtpreis sichtbar, Komponenten ausgeblendet | Einzelpreise der Unterpositionen werden aufgeschlüsselt |
+| **Typischer Einsatz** | Fertige Pakete mit Festpreis | Kalkulierte Leistungen mit aufgeschlüsselten Einzelposten |
+
+Weitere Details finden Sie unter [Auftragspositionen — Bundle vs. Gruppe](../4-auftraege/3-auftragspositionen.md#unterschied-bundle-produkt-vs-gruppe-textposition-mit-unterpositionen).
+
 ### Komponente hinzufügen
 
 1. Klicken Sie im Tab **Bundleprodukte** auf **Hinzufügen**.

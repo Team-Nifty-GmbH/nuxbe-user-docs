@@ -46,7 +46,23 @@ Eine Position, die als **Alternative** gekennzeichnet ist. Sie zeigt dem Kunden 
 
 ### Bundle-Position
 
-Eine Position, die Teil eines Produktbündels ist. Bundle-Positionen werden automatisch erstellt, wenn ein Bündelprodukt zum Auftrag hinzugefügt wird. Sie sind nicht direkt bearbeitbar und zeigen die einzelnen Bestandteile des Bündels an.
+Eine Position, die Teil eines Produktbündels ist. Bundle-Positionen werden automatisch erstellt, wenn ein [Bundleprodukt](../6-produkte/3-produkt-detail.md#tab-bundleprodukte) zum Auftrag hinzugefügt wird. Sie sind nicht direkt bearbeitbar und zeigen die einzelnen Bestandteile des Bündels an.
+
+> **Wichtig:** Bei einem Bundle-Produkt wird der **Preis ausschließlich am Bundle selbst** festgelegt. Die Unterpositionen (Einzelkomponenten) haben keinen eigenen Preis und dienen nur zur Information über die enthaltenen Bestandteile. Im Kundendokument (Angebot, Rechnung) wird nur die Hauptposition mit dem Gesamtpreis angezeigt.
+
+### Unterschied: Bundle-Produkt vs. Gruppe (Textposition mit Unterpositionen)
+
+Diese beiden Konzepte werden häufig verwechselt, funktionieren aber grundlegend unterschiedlich:
+
+| | **Bundle-Produkt** | **Gruppe (Textposition)** |
+|---|---|---|
+| **Erstellt über** | Produkt mit [Bundleprodukte-Tab](../6-produkte/3-produkt-detail.md#tab-bundleprodukte) | **Kommentar / Block** mit manuell zugeordneten Unterpositionen |
+| **Preis liegt auf** | Der Hauptposition (Bundle) | Den einzelnen Unterpositionen |
+| **Unterpositionen** | Werden automatisch erstellt, haben keinen eigenen Preis | Werden manuell hinzugefügt, jede hat einen eigenen Preis |
+| **Im Kundendokument** | Nur die Hauptposition mit Gesamtpreis wird angezeigt | Die Textposition dient als Überschrift, die Unterpositionen mit ihren Einzelpreisen werden angezeigt |
+| **Typischer Einsatz** | Fertige Pakete mit Festpreis (z. B. „Wartungspaket 500 €") | Kalkulierte Leistungen mit aufgeschlüsselten Einzelposten (z. B. Material + Arbeitszeit) |
+
+> **Hinweis:** Wenn eine Position im Angebot mit 0 € angezeigt wird, prüfen Sie, ob es sich um ein Bundle-Produkt handelt, bei dem der Preis am Bundle selbst nicht hinterlegt ist. In diesem Fall muss der Preis im [Produktkatalog](../6-produkte/3-produkt-detail.md) am Bundle-Produkt eingetragen werden. Wenn Sie stattdessen eine Aufschlüsselung der Einzelpreise wünschen, verwenden Sie eine Gruppe (Textposition mit Unterpositionen).
 
 ## Neue Position hinzufügen
 
@@ -211,7 +227,7 @@ Es gibt verschiedene Situationen, in denen unterschiedliche MwSt-Sätze innerhal
 - **Steuerbefreite Positionen:** Einzelne Positionen (z. B. Versicherungsleistungen) können steuerfrei sein, während andere besteuert werden.
 - **Innergemeinschaftliche Lieferungen:** Bei Lieferungen ins EU-Ausland kann der Steuersatz für bestimmte Positionen auf 0 % gesetzt werden.
 
-> **Tipp:** Wenn der **gesamte Auftrag** steuerfrei sein soll (z. B. bei Lieferungen in ein Drittland), müssen Sie nicht jede Position einzeln ändern. Verwenden Sie stattdessen das Feld **Steuerbefreiung** in der Sidebar des Auftrags. Dieses Feld setzt automatisch alle Positionen auf 0 % MwSt und druckt den Grund der Steuerbefreiung auf den Beleg.
+> **Wichtig:** Der **MwSt-Satz** wird beim Hinzufügen einer Position festgelegt und auf der Position gespeichert. Wenn Sie die **Steuerbefreiung** auf dem Auftrag nachträglich ändern, wirkt sich das **nur auf neu hinzugefügte Positionen** aus — bereits bestehende Positionen behalten ihren ursprünglichen MwSt-Satz. Setzen Sie die Steuerbefreiung daher **vor** dem Hinzufügen von Positionen, oder ändern Sie den MwSt-Satz auf jeder bestehenden Position einzeln.
 
 > **Hinweis:** Wenn mehrere MwSt-Sätze in einem Auftrag verwendet werden, zeigt die Betragsübersicht in der rechten Spalte eine **aufgeschlüsselte MwSt-Darstellung** -- also die MwSt-Beträge getrennt nach Steuersatz. Diese Aufschlüsselung erscheint auch auf dem PDF-Beleg.
 
