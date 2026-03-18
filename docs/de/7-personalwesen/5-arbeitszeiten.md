@@ -36,6 +36,30 @@ Arbeitszeiten werden täglich mit Start- und Endzeit erfasst:
 - Pausenzeiten können innerhalb eines Eintrags separat erfasst werden, sodass die Netto-Arbeitszeit korrekt berechnet wird.
 - Pro Tag und Mitarbeiter können mehrere Arbeitszeitblöcke existieren (z. B. bei geteilter Arbeitszeit).
 
+## Arbeitszeit nachträglich erstellen oder bearbeiten
+
+Wenn Sie eine Arbeitszeit nachträglich erfassen oder eine bestehende Arbeitszeit bearbeiten möchten:
+
+1. Navigieren Sie zu **Personalwesen > Arbeitszeiten**.
+2. Klicken Sie auf **Neu** (oder **Bearbeiten** bei einem bestehenden Eintrag).
+
+   ![Arbeitszeit erstellen](../screenshots/180-arbeitszeit-erstellen-modal.png)
+
+3. Füllen Sie die Felder aus:
+   - **Ist Tagesarbeitszeit** - Aktivieren Sie diese Option, wenn es sich um die Haupt-Tagesarbeitszeit handelt (An-/Abmeldung am Arbeitsplatz).
+   - **Arbeitszeitart** - Wählen Sie die Art der Arbeitszeit (z. B. reguläre Arbeitszeit, Überstunden). Die verfügbaren Typen werden in den [Einstellungen](../14-einstellungen/36-arbeitszeittypen.md) konfiguriert.
+   - **Ist Abrechenbar** - Gibt an, ob die Arbeitszeit dem Kunden in Rechnung gestellt wird.
+   - **Benutzer** - Der Mitarbeiter, für den die Arbeitszeit erfasst wird.
+   - **Gestartet am** / **Beendet am** - Start- und Endzeitpunkt der Arbeitszeit.
+   - **Pausenzeit** - Pausendauer im Format Stunden:Minuten.
+   - **Kontakt** - Optionale Zuordnung zu einem Kunden/Kontakt.
+   - **Modell** - Optionale Zuordnung zu einem bestimmten Bereich, z. B. **Projekt** (für Baustellen oder Projekte), **Aufgabe**, **Ticket** oder **Abwesenheitsantrag**. Nachdem Sie ein Modell ausgewählt haben, erscheint ein weiteres Feld **Datensatz**, in dem Sie den konkreten Eintrag auswählen können (z. B. ein bestimmtes Projekt oder eine bestimmte Aufgabe).
+   - **Name** - Kurzbezeichnung der Tätigkeit.
+   - **Beschreibung** - Detaillierte Beschreibung der durchgeführten Arbeit.
+4. Klicken Sie auf **Speichern**.
+
+> **Hinweis:** Abwesenheiten (Urlaub, Krankheit etc.) sollten über [Abwesenheitsanträge](6-abwesenheitsantraege.md) erfasst werden, nicht über die Arbeitszeiterfassung. Genehmigte Abwesenheitsanträge werden automatisch in der [Mitarbeitertage](8-mitarbeitertage.md)-Übersicht berücksichtigt und korrekt auf die Tagesarbeitszeit angerechnet.
+
 ## Zuordnung zu Aufgaben und Tickets
 
 Arbeitszeiten können optional einer Aufgabe oder einem Ticket zugeordnet werden:
