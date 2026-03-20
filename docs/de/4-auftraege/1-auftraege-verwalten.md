@@ -10,17 +10,17 @@ In der Auftragsliste sehen Sie alle Aufträge, Rechnungen, Angebote und weitere 
 
 2. Die Tabelle zeigt alle Aufträge mit folgenden Spalten:
 
-   | Spalte | Beschreibung |
-   |---|---|
-   | **Auftragsnummer** | Eindeutige, automatisch vergebene Nummer des Auftrags |
-   | **Auftragsart** | Typ des Auftrags (z. B. Angebot, Auftrag, Rechnung, Gutschrift) |
-   | **Kontakt** | Zugehöriger Kunde oder Lieferant |
-   | **Rechnungsnummer** | Rechnungsnummer (nur bei Rechnungen und Gutschriften) |
-   | **Nettosumme** | Gesamtbetrag ohne Mehrwertsteuer |
-   | **Bruttosumme** | Gesamtbetrag inklusive Mehrwertsteuer |
-   | **Saldo** | Offener Restbetrag des Auftrags (relevant bei Rechnungen) |
-   | **Lieferdatum** | Geplantes oder tatsächliches Lieferdatum |
-   | **Erstellt am** | Datum, an dem der Auftrag angelegt wurde |
+   | Spalte              | Beschreibung                                                    |
+   | ------------------- | --------------------------------------------------------------- |
+   | **Auftragsnummer**  | Eindeutige, automatisch vergebene Nummer des Auftrags           |
+   | **Auftragsart**     | Typ des Auftrags (z. B. Angebot, Auftrag, Rechnung, Gutschrift) |
+   | **Kontakt**         | Zugehöriger Kunde oder Lieferant                                |
+   | **Rechnungsnummer** | Rechnungsnummer (nur bei Rechnungen und Gutschriften)           |
+   | **Nettosumme**      | Gesamtbetrag ohne Mehrwertsteuer                                |
+   | **Bruttosumme**     | Gesamtbetrag inklusive Mehrwertsteuer                           |
+   | **Saldo**           | Offener Restbetrag des Auftrags (relevant bei Rechnungen)       |
+   | **Lieferdatum**     | Geplantes oder tatsächliches Lieferdatum                        |
+   | **Erstellt am**     | Datum, an dem der Auftrag angelegt wurde                        |
 
 ## Nach Auftragsart filtern
 
@@ -127,7 +127,7 @@ Um einen bestehenden Auftrag als Vorlage zu nutzen:
 5. Ein neuer Auftrag wird mit denselben Kopfdaten und Positionen erstellt.
 6. Passen Sie die Daten nach Bedarf an und klicken Sie auf **Speichern**.
 
-> **Wichtig:** Beim Duplizieren können Sie nur Auftragsarten auswählen, die **demselben Mandanten** zugeordnet sind wie der ursprüngliche Auftrag. Auftragsarten anderer Mandanten werden nicht angeboten. Wenn Sie einen Auftrag für einen anderen Mandanten benötigen, erstellen Sie stattdessen einen neuen Auftrag über die Schaltfläche **Neu** und wählen dort den gewünschten Mandanten und die Auftragsart.
+> **Hinweis:** Im Duplizieren-Dialog werden alle aktiven Auftragsarten angezeigt. Der Mandant des neuen Auftrags wird vom Originalauftrag übernommen.
 
 ## Weiterführende Themen
 

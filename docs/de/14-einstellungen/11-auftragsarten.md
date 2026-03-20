@@ -19,7 +19,7 @@ Auftragsarten definieren die verschiedenen Dokumenttypen im System wie Angebot, 
 1. Klicken Sie auf **Neu**.
 2. Füllen Sie das Formular aus:
    - **Name** - Geben Sie eine aussagekräftige Bezeichnung ein (z.B. "Kundenrechnung", "Lieferantengutschrift")
-   - **Mandant** - Wählen Sie den zugehörigen Mandanten aus
+   - **Mandanten** - Wählen Sie einen oder mehrere Mandanten aus, für die diese Auftragsart verfügbar sein soll. Wird kein Mandant zugeordnet, steht die Auftragsart für alle Mandanten zur Verfügung.
    - **Typ** - Wählen Sie den Dokumenttyp (Angebot, Auftrag, Lieferschein, Rechnung, Gutschrift, etc.)
    - **Beschreibung** - Optional eine erklärende Beschreibung
    - **E-Mail-Vorlage** - Wählen Sie eine Vorlage für automatische E-Mails
@@ -51,13 +51,11 @@ Auftragsarten definieren die verschiedenen Dokumenttypen im System wie Angebot, 
 
 ### Mandantenzuordnung
 
-Jede Auftragsart ist einem bestimmten Mandanten zugeordnet. Diese Zuordnung hat folgende Auswirkungen:
+Eine Auftragsart kann einem oder mehreren Mandanten zugeordnet werden. Wird keine Zuordnung vorgenommen, steht die Auftragsart automatisch für alle Mandanten zur Verfügung.
 
-- Beim **Erstellen** eines neuen Auftrags werden nur Auftragsarten angeboten, die zum gewählten Mandanten gehören.
-- Beim **Duplizieren** eines Auftrags können nur Auftragsarten des gleichen Mandanten wie der Originalauftrag gewählt werden.
-- Die Auftragsart kann nachträglich nicht auf eine andere Mandantenzuordnung geändert werden.
-
-> **Hinweis:** Wenn Sie beim Duplizieren eine bestimmte Auftragsart nicht auswählen können, prüfen Sie unter **Einstellungen > Aufträge > Auftragsarten**, ob die gewünschte Auftragsart dem richtigen Mandanten zugeordnet ist.
+- Auftragsarten **ohne** Mandantenzuordnung sind global verfügbar und können in Aufträgen jedes Mandanten verwendet werden.
+- Auftragsarten **mit** Mandantenzuordnung stehen nur für die zugeordneten Mandanten zur Verfügung.
+- Die Mandantenzuordnung kann jederzeit unter **Einstellungen > Aufträge > Auftragsarten** angepasst werden.
 
 ### Nummernkreise
 
