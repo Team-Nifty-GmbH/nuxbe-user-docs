@@ -70,6 +70,7 @@ Die Detailansicht gliedert sich in mehrere Tabs:
 - [Adressen](3-adressen.md) - Adressen eines Kontakts verwalten
 - [Kommunikation](4-kommunikation.md) - Kontaktmöglichkeiten verwalten
 - [Kontakte zusammenführen](5-kontakte-zusammenfuehren.md) - Doppelte Kontakte erkennen und zusammenführen
+- [Vertreter zuweisen](6-vertreter-zuweisen.md) - Mehreren Kontakten gleichzeitig einen neuen Vertreter zuordnen
 
 ## Weiterführende Themen
 
