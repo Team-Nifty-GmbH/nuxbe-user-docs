@@ -34,6 +34,7 @@ In the detail view you will find:
 - [Contact Details](2-contact-detail.md) - Detail view of a contact
 - [Addresses](3-addresses.md) - Manage contact addresses
 - [Communication](4-communication.md) - Manage contact methods
+- [Assign Representative](5-assign-representative.md) - Assign a new representative to multiple contacts at once
 
 ## Related Topics
 
