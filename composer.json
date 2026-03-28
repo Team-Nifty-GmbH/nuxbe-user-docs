@@ -25,6 +25,6 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.4",
-        "team-nifty-gmbh/flux-erp": "dev-main"
+        "team-nifty-gmbh/flux-erp": "^1.0"
     }
 }
