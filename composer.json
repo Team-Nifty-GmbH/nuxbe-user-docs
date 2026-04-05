@@ -8,6 +8,11 @@
             "TeamNiftyGmbH\\NuxbeUserDocs\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "TeamNiftyGmbH\\NuxbeUserDocs\\Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Team Nifty GmbH",
@@ -25,6 +30,30 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.5",
-        "team-nifty-gmbh/flux-erp": "^1.0"
+        "team-nifty-gmbh/flux-erp": "^1.0",
+        "team-nifty-gmbh/nuxbe-knowledge": "*"
+    },
+    "require-dev": {
+        "brianium/paratest": "^7.0",
+        "laravel/pint": "^1.25",
+        "orchestra/testbench": "^11.0",
+        "pestphp/pest": "^4.0"
+    },
+    "scripts": {
+        "testbench": "./vendor/bin/testbench package:test",
+        "test": [
+            "@test-feature",
+            "@test-unit"
+        ],
+        "test-feature": "@testbench --parallel --testsuite Feature",
+        "test-unit": "@testbench --parallel --testsuite Unit",
+        "lint": "./vendor/bin/pint --test",
+        "format": "./vendor/bin/pint"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
     }
 }
