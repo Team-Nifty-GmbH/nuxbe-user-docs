@@ -16,6 +16,7 @@ Auf den folgenden Seiten erfahren Sie, was die einzelnen Auftragsarten auszeichn
 | **Einkauf** | Bestellung bei einem Lieferanten | [Einkauf](6-einkauf.md) |
 | **Einkaufs-Abonnement** | Wiederkehrender Einkauf bei einem Lieferanten mit automatischer Belegstellung | [Einkaufs-Abonnements](7-einkaufs-abonnements.md) |
 | **Split-Auftrag** | Teilauftrag, der aus einem bestehenden Auftrag heraus erstellt wird (z. B. Teillieferung) | [Split-Auftr채ge](8-split-auftraege.md) |
+| **Sammelauftrag** | F체hrt mehrere bestehende Auftr채ge oder Lieferscheine zu einem Gesamtauftrag zusammen | [Sammelauftr채ge](9-sammelauftraege.md) |
 
 ## Verkauf und Einkauf
 
@@ -23,7 +24,7 @@ Jede Auftragsart hat einen sogenannten **Multiplikator**, der bestimmt, ob Betr�
 
 | Typ | Auftragsarten | Multiplikator | Bedeutung |
 |---|---|---|---|
-| **Verkauf** | Angebot, Auftrag, Abonnement, Split-Auftrag | +1 | Einnahme -- Betr채ge werden als positiver Umsatz gewertet |
+| **Verkauf** | Angebot, Auftrag, Abonnement, Split-Auftrag, Sammelauftrag | +1 | Einnahme -- Betr채ge werden als positiver Umsatz gewertet |
 | **Gutschrift / Retoure** | Gutschrift, Retoure | -1 | Korrektur -- Betr채ge werden als negativer Umsatz gewertet |
 | **Einkauf** | Einkauf, Einkaufs-Abonnement | -1 | Ausgabe -- Betr채ge werden als Kosten gewertet |
 

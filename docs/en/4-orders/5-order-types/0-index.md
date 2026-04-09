@@ -16,6 +16,7 @@ The following pages describe what makes each order type unique and how to use th
 | **Purchase** | Order placed with a supplier | [Purchases](6-purchases.md) |
 | **Purchase Subscription** | Recurring purchase from a supplier with automatic document creation | [Purchase Subscriptions](7-purchase-subscriptions.md) |
 | **Split Order** | Partial order created from an existing order (e.g. partial delivery) | [Split Orders](8-split-orders.md) |
+| **Collective Order** | Combines multiple existing orders into a single order (e.g. for a collective invoice) | [Collective Orders](9-collective-orders.md) |
 
 ## Sales and Purchases
 
@@ -23,7 +24,7 @@ Each order type has a **multiplier** that determines whether amounts are recorde
 
 | Type | Order Types | Multiplier | Meaning |
 |---|---|---|---|
-| **Sales** | Quote, Order, Subscription, Split Order | +1 | Revenue -- amounts count as positive income |
+| **Sales** | Quote, Order, Subscription, Split Order, Collective Order | +1 | Revenue -- amounts count as positive income |
 | **Credit / Return** | Credit Note, Return | -1 | Correction -- amounts count as negative income |
 | **Purchase** | Purchase, Purchase Subscription | -1 | Expense -- amounts count as costs |
 
