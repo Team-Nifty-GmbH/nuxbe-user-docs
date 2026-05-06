@@ -2,6 +2,8 @@
 
 In der Leadliste sehen Sie alle Vertriebskontakte und deren aktuellen Status in der Vertriebspipeline. Von hier aus können Sie neue Leads anlegen, bestehende filtern und direkt in die Detailansicht eines Leads wechseln.
 
+> **Voraussetzung:** Bevor Sie den ersten Lead anlegen können, muss in Ihrem Mandanten **mindestens ein Lead-Status** existieren. Solange die Liste der Status leer ist, lässt sich kein Lead speichern -- das Pflichtfeld **Status** kann dann nicht gefüllt werden, und Sie sehen beim Speichern eine Fehlermeldung. Lead-Status legt Ihr Administrator einmalig unter [Einstellungen > Lead-Status](../14-einstellungen/44-lead-status.md) an. Optional sollten dort auch [Lead-Verlustgründe](../14-einstellungen/45-lead-verlustgruende.md) gepflegt werden, damit verlorene Leads sauber kategorisiert werden können.
+
 ## Leadliste öffnen
 
 1. Klicken Sie in der Sidebar auf **Verkauf** und dann auf **Leads**.
