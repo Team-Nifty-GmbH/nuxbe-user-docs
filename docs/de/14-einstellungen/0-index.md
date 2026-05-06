@@ -117,5 +117,6 @@ Die Einstellungen sind in folgende Kategorien unterteilt:
 - [Protokolle](54-protokolle.md) - System-Protokolle
 - [Druckaufträge](55-druckauftraege.md) - Druckaufträge
 - [Drucker](56-drucker.md) - Drucker verwalten
+- [Sicherheitseinstellungen](57-sicherheitseinstellungen.md) - Zwei-Faktor-Authentifizierung erzwingen, Magic-Login-Links und Reset für Anwender
 
 > **Hinweis:** Änderungen an den Einstellungen können Auswirkungen auf die gesamte Anwendung haben. Nehmen Sie Änderungen nur vor, wenn Sie sich über deren Auswirkungen im Klaren sind.
