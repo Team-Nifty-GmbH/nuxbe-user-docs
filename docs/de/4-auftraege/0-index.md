@@ -59,6 +59,7 @@ Für den Zahlungsverkehr unterstützt Nuxbe SEPA-Lastschriften und SEPA-Überwei
 - [Auftragspositionen](3-auftragspositionen.md) - Positionen innerhalb eines Auftrags verwalten
 - [Auftragspositionen-Liste](4-auftragspositionen-liste.md) - Alle Positionen auftragsübergreifend durchsuchen
 - [Auftragsarten](5-auftragsarten/0-index.md) - Besonderheiten der einzelnen Auftragsarten (Angebote, Aufträge, Abonnements, Einkauf u. a.)
+- [Folge-Belege erzeugen](6-belege-erzeugen.md) - Aus einem Angebot einen Auftrag, aus einem Auftrag einen Teilauftrag oder eine Retoure, aus einer Rechnung eine Gutschrift
 
 ## Weiterführende Themen
 
