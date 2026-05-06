@@ -71,6 +71,7 @@ Die Detailansicht gliedert sich in mehrere Tabs:
 - [Kommunikation](4-kommunikation.md) - Kontaktmöglichkeiten verwalten
 - [Kontakte zusammenführen](5-kontakte-zusammenfuehren.md) - Doppelte Kontakte erkennen und zusammenführen
 - [Vertreter zuweisen](6-vertreter-zuweisen.md) - Mehreren Kontakten gleichzeitig einen neuen Vertreter zuordnen
+- [Kommunikation protokollieren](7-kommunikation-protokoll.md) - E-Mails, Briefe und Telefonate manuell festhalten und an mehrere Records hängen
 
 ## Weiterführende Themen
 
