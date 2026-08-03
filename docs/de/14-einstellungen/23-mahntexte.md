@@ -12,7 +12,7 @@ Mahntexte definieren den Inhalt der Mahnschreiben für verschiedene Mahnstufen. 
    - **Mahnstufe** - Stufe der Mahnung (1, 2, 3, etc.)
    - **Betreff** - E-Mail-Betreff der Mahnung
    - **Textvorschau** - Auszug aus dem Mahntext
-   - **E-Mail-Vorlage** - Optionale zugeordnete E-Mail-Vorlage
+   - **E-Mail-Vorlage** - Zugeordnete E-Mail-Vorlage, erforderlich für den Mahnlauf
 
 ## Mahntext anlegen
 
@@ -20,8 +20,10 @@ Mahntexte definieren den Inhalt der Mahnschreiben für verschiedene Mahnstufen. 
 2. Wählen Sie die **Mahnstufe** aus (z. B. 1 für erste Mahnung, 2 für zweite Mahnung).
 3. Geben Sie den **Betreff** ein (z. B. "Zahlungserinnerung", "1. Mahnung", "2. Mahnung").
 4. Verfassen Sie den **Mahntext** im Textfeld. Dieser Text wird auf dem gedruckten Mahnschreiben ausgegeben.
-5. Optional: Wählen Sie eine **E-Mail-Vorlage** aus, falls die Mahnung per E-Mail versendet werden soll.
+5. Wählen Sie eine **E-Mail-Vorlage** aus. Ohne zugeordnete Vorlage kann der Mahnlauf für diese Stufe keine Mahnung per E-Mail versenden.
 6. Klicken Sie auf **Speichern**.
+
+> **Wichtig:** Der Mahnlauf versendet eine Mahnung nur dann, wenn für die benötigte Mahnstufe ein Mahntext existiert **und** diesem eine E-Mail-Vorlage zugeordnet ist. Fehlt eines von beidem, bleibt die betroffene Rechnung im Mahnlauf stehen und wird mit dem jeweiligen Grund ausgewiesen. Der Mahntext liefert dabei den Inhalt des gedruckten Mahnschreibens, die E-Mail-Vorlage den Text der Mahnmail.
 
 ## Mahntext bearbeiten
 
@@ -37,7 +39,7 @@ Mahnstufen bauen aufeinander auf:
 - **Mahnstufe 2** - Erste Mahnung mit Hinweis auf Verzug und mögliche Mahngebühren
 - **Mahnstufe 3** - Zweite Mahnung mit deutlichem Ton und Ankündigung rechtlicher Schritte
 
-Das System wählt automatisch den Text der höchsten verfügbaren Mahnstufe, die kleiner oder gleich der aktuellen Mahnstufe ist.
+Der Mahnlauf verwendet für jede Rechnung den Mahntext, dessen Mahnstufe exakt der nächsten fälligen Stufe entspricht. Existiert für diese Stufe kein Mahntext, wird die Rechnung nicht gemahnt und im Mahnlauf mit dem entsprechenden Hinweis ausgewiesen. Legen Sie daher für jede Stufe, die Sie tatsächlich nutzen, einen eigenen Mahntext an.
 
 ## Dynamische Inhalte mit Editor-Variablen
 

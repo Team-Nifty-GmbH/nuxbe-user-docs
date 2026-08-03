@@ -76,6 +76,8 @@ For the system to generate and send a reminder automatically, **all** of the fol
 - The invoice must be locked (invoice number assigned)
 - The order must have an open balance (balance is not 0)
 - The order must not be excluded from the reminder process
+- A [reminder text](../14-settings/23-payment-reminder-texts.md) must exist for the next due reminder level
+- That reminder text must have an [email template](../14-settings/25-email-templates.md) assigned
 
 > **Note:** If any of these conditions is not met, no reminder is generated for the affected order.
 
@@ -87,6 +89,15 @@ For the system to generate and send a reminder automatically, **all** of the fol
 - Check whether the order is excluded from the reminder process
 - Check the **Payment Reminder Next Date** field on the order -- is it set and has the date passed?
 - Check whether the invoice is locked and has an invoice number
+
+**Problem:** The reminder run reports that invoices were not sent
+
+The reminder run lists every invoice it could not send together with the reason. The two most common reasons are:
+
+- **No reminder text is configured for the reminder level** - Create a reminder text for the affected level under [Settings > Accounting > Payment Reminder Texts](../14-settings/23-payment-reminder-texts.md).
+- **The reminder text has no email template** - Create a template under [Settings > Accounting > Email Templates](../14-settings/25-email-templates.md) and assign it to the reminder text of the affected level.
+
+The affected invoices stay in the reminder run and their reminder level is not increased. Once the missing configuration is added, simply start the reminder run again.
 
 **Problem:** Email dialog does not open after clicking "Continue"
 
