@@ -68,6 +68,8 @@ Damit eine Mahnung beim automatischen Mahnlauf erzeugt und versendet werden kann
 - Die Rechnung muss gesperrt sein (Rechnungsnummer vergeben)
 - Der Auftrag muss einen offenen Saldo haben (Balance ≠ 0)
 - Der Auftrag darf nicht vom Mahnwesen ausgeschlossen sein
+- Für die nächste fällige Mahnstufe muss ein [Mahntext](../14-einstellungen/23-mahntexte.md) hinterlegt sein
+- Diesem Mahntext muss eine [E-Mail-Vorlage](../14-einstellungen/25-email-vorlagen.md) zugeordnet sein
 
 > **Hinweis:** Fehlt eine dieser Voraussetzungen, wird für den betroffenen Auftrag keine Mahnung erzeugt.
 
@@ -81,6 +83,15 @@ Falls Mahnungen nicht wie erwartet erzeugt oder versendet werden, prüfen Sie di
 - Prüfen Sie, ob der Auftrag vom Mahnwesen ausgeschlossen wurde
 - Prüfen Sie das Feld **Zahlungserinnerung Nächstes Datum** im Auftrag -- ist es gesetzt und liegt das Datum in der Vergangenheit?
 - Prüfen Sie, ob die Rechnung gesperrt ist und eine Rechnungsnummer hat
+
+**Problem:** Der Mahnlauf meldet, dass Rechnungen nicht versendet wurden
+
+Der Mahnlauf weist jede Rechnung aus, die er nicht versenden konnte, zusammen mit dem Grund. Die beiden häufigsten Gründe sind:
+
+- **Für die Mahnstufe ist kein Mahntext hinterlegt** - Legen Sie unter [Einstellungen > Buchhaltung > Mahntexte](../14-einstellungen/23-mahntexte.md) einen Mahntext für die betroffene Stufe an.
+- **Beim Mahntext ist keine E-Mail-Vorlage hinterlegt** - Legen Sie unter [Einstellungen > Buchhaltung > E-Mail-Vorlagen](../14-einstellungen/25-email-vorlagen.md) eine Vorlage an und ordnen Sie diese anschließend dem Mahntext der betroffenen Stufe zu.
+
+Die betroffenen Rechnungen bleiben im Mahnlauf stehen, ihre Mahnstufe wird nicht hochgezählt. Sobald die fehlende Konfiguration ergänzt ist, starten Sie den Mahnlauf einfach erneut.
 
 **Problem:** E-Mail-Dialog öffnet sich nicht nach Klick auf „Fortsetzen"
 
