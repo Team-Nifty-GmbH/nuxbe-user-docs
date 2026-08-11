@@ -78,9 +78,9 @@ Die hier hinterlegten Kontaktmöglichkeiten werden in folgenden Bereichen automa
 
 Der automatische Mahnversand verwendet bevorzugt die E-Mail-Adresse der **Rechnungsadresse des Auftrags**. Ist dort keine E-Mail hinterlegt, wird die **Rechnungsadresse des Kontakts** (`Kontakt > Rechnungsadresse`) geprüft. Ist auch dort keine E-Mail vorhanden, wird die **Hauptadresse** des Kontakts verwendet. Fehlt an allen drei Adressen eine E-Mail-Adresse, kann keine Mahnung per E-Mail versendet werden.
 
-> **Wichtig:** Stellen Sie sicher, dass an der Rechnungsadresse des Auftrags oder zumindest an der Hauptadresse des Kontakts eine gültige E-Mail-Adresse hinterlegt ist. Weitere Informationen finden Sie unter [Adressen](3-adressen.md) und [Mahnungen](../5-buchhaltung/2-mahnungen.md).
+> **Wichtig:** Stellen Sie sicher, dass an der Rechnungsadresse des Auftrags oder zumindest an der Hauptadresse des Kontakts eine gültige E-Mail-Adresse hinterlegt ist. Weitere Informationen finden Sie unter [Adressen](3-adressen.md) und [Mahnlauf](../5-buchhaltung/2-mahnlauf.md).
 
-Weitere Informationen zum Mahnwesen finden Sie unter [Mahnungen](../5-buchhaltung/2-mahnungen.md).
+Weitere Informationen zum Mahnwesen finden Sie unter [Mahnlauf](../5-buchhaltung/2-mahnlauf.md).
 
 ## Welche E-Mail-Adresse wird für den automatischen Versand verwendet?
 
@@ -106,7 +106,7 @@ Für Mahnungen und Zahlungserinnerungen gilt **dieselbe Suchkette** wie für Rec
 2. E-Mail auf der Rechnungsadresse des Kontakts
 3. E-Mail auf der Hauptadresse des Kontakts
 
-Das ist deshalb so, weil Mahnungen sich immer auf einen bestimmten Auftrag (bzw. eine bestimmte Rechnung) beziehen und an denselben Empfänger gehen sollen wie die ursprüngliche Rechnung. Weitere Informationen zum Mahnwesen finden Sie unter [Mahnungen](../5-buchhaltung/2-mahnungen.md).
+Das ist deshalb so, weil Mahnungen sich immer auf einen bestimmten Auftrag (bzw. eine bestimmte Rechnung) beziehen und an denselben Empfänger gehen sollen wie die ursprüngliche Rechnung. Weitere Informationen zum Mahnwesen finden Sie unter [Mahnlauf](../5-buchhaltung/2-mahnlauf.md).
 
 ### E-Mail-Adresse für allgemeine Benachrichtigungen
 
@@ -193,4 +193,4 @@ Mögliche Ergebnisse:
 - [Adressen](3-adressen.md) - Adressen und deren Kontaktoptionen verwalten
 - [E-Mail-Adresse auf Adressebene](3-adressen.md#e-mail-adresse-auf-adressebene-für-den-rechnungsversand) - Detaillierte Anleitung zur E-Mail-Einrichtung auf Adressen
 - [E-Mail](../11-e-mail/0-index.md) - E-Mails direkt aus Nuxbe versenden
-- [Mahnungen](../5-buchhaltung/2-mahnungen.md) - Mahnwesen und Zahlungserinnerungen
+- [Mahnlauf](../5-buchhaltung/2-mahnlauf.md) - Mahnwesen und Zahlungserinnerungen

@@ -52,7 +52,7 @@ Das Ändern der Rechnungsadresse an einem Auftrag hat keinen Einfluss auf die St
 
 > **Beispiel:** Ihr Kunde „Muster GmbH" hat eine Zentrale in München und eine Niederlassung in Berlin. Wählen Sie bei der Auftragsanlage einfach die jeweils passende Adresse im Feld **Rechnungsadresse** aus.
 
-> **Hinweis:** Der automatische E-Mail-Versand von Mahnungen verwendet bevorzugt die E-Mail-Adresse der hier ausgewählten **Rechnungsadresse des Auftrags**. Ist dort keine E-Mail hinterlegt, fällt das System auf die Rechnungsadresse des Kontakts und dann auf die Hauptadresse zurück. Stellen Sie sicher, dass an der Rechnungsadresse eine gültige E-Mail-Adresse hinterlegt ist. Weitere Details finden Sie unter [Mahnungen](../5-buchhaltung/2-mahnungen.md).
+> **Hinweis:** Der automatische E-Mail-Versand von Mahnungen verwendet bevorzugt die E-Mail-Adresse der hier ausgewählten **Rechnungsadresse des Auftrags**. Ist dort keine E-Mail hinterlegt, fällt das System auf die Rechnungsadresse des Kontakts und dann auf die Hauptadresse zurück. Stellen Sie sicher, dass an der Rechnungsadresse eine gültige E-Mail-Adresse hinterlegt ist. Weitere Details finden Sie unter [Mahnlauf](../5-buchhaltung/2-mahnlauf.md).
 
 ### Adresse auf dem Auftrag aktualisieren
 
@@ -109,7 +109,7 @@ Wenn Sie für einen bestimmten Auftrag **dauerhaft keine Mahnungen** erzeugen m�
 
 > **Hinweis:** Die Einstellung auf Kontaktebene hat Vorrang. Wenn beim Kontakt Mahnungen deaktiviert sind, werden **alle** Rechnungen dieses Kontakts vom Mahnlauf ausgeschlossen -- unabhängig vom Datum auf dem einzelnen Auftrag.
 
-Weitere Informationen zum Mahnwesen finden Sie unter [Mahnungen](../5-buchhaltung/2-mahnungen.md).
+Weitere Informationen zum Mahnwesen finden Sie unter [Mahnlauf](../5-buchhaltung/2-mahnlauf.md).
 
 > **Hinweis:** Wenn Sie den Kontakt auswählen oder ändern, werden die Rechnungs- und Lieferadresse sowie die Zahlungseinstellungen automatisch aus den Stammdaten des Kontakts übernommen. Sie können diese Werte anschließend manuell anpassen.
 
@@ -315,7 +315,7 @@ Um aus einem bestehenden Auftrag einen Folgebeleg zu erstellen:
 - [Auftragspositionen](3-auftragspositionen.md) - Positionen bearbeiten und hinzufügen
 - [Kontakte](../2-kontakte/0-index.md) - Verknüpften Kontakt bearbeiten
 - [Buchhaltung](../5-buchhaltung/0-index.md) - Zahlungen und Transaktionen verwalten
-- [Mahnungen](../5-buchhaltung/2-mahnungen.md) - Mahnwesen und Zahlungserinnerungen
+- [Mahnlauf](../5-buchhaltung/2-mahnlauf.md) - Mahnwesen und Zahlungserinnerungen
 - [Adressen](../2-kontakte/3-adressen.md) - Rechnungsadressen verwalten
 - [Kommunikation](../2-kontakte/4-kommunikation.md) - E-Mail-Adressen auf Kontakt- und Adressebene
 - [Einstellungen > Auftragsarten](../14-einstellungen/11-auftragsarten.md) - Auftragsarten und Nummernkreise konfigurieren

@@ -66,6 +66,6 @@ Mit freundlichen Grüßen
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
 - [Editor-Variablen](../1-erste-schritte/6-editor-variablen.md) - Dynamische Variablen in Textfeldern verwenden
-- [Mahnungen](../5-buchhaltung/2-mahnungen.md) - Mahnungen verwalten
+- [Mahnlauf](../5-buchhaltung/2-mahnlauf.md) - Überfällige Rechnungen mahnen
 - [Mahneinstellungen](24-mahneinstellungen.md) - Mahnfristen und Gebühren konfigurieren
 - [E-Mail-Vorlagen](25-email-vorlagen.md) - E-Mail-Vorlagen verwalten
