@@ -68,6 +68,6 @@ Bei obiger Konfiguration ergibt sich folgender Ablauf für eine Rechnung vom 01.
 ## Weiterführende Themen
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
-- [Mahnungen](../5-buchhaltung/2-mahnungen.md) - Mahnungen verwalten
+- [Mahnlauf](../5-buchhaltung/2-mahnlauf.md) - Überfällige Rechnungen mahnen
 - [Mahntexte](23-mahntexte.md) - Mahntexte verwalten
 - [Buchhaltungseinstellungen](22-buchhaltungseinstellungen.md) - Automatischen Mahnversand konfigurieren

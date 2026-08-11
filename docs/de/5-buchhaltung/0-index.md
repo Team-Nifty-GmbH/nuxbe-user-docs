@@ -7,7 +7,7 @@ Im Modul **Buchhaltung** verwalten Sie alle finanziellen Abläufe Ihres Unterneh
 Navigieren Sie über die Sidebar zu **Buchhaltung**. Das Untermenü enthält folgende Bereiche:
 
 - **Provisionen** - Provisionsverwaltung für Vertriebsmitarbeiter mit Zuordnung zu Aufträgen und Abrechnungsstatus
-- **Mahnungen** - Mahnwesen für offene Rechnungen mit konfigurierbaren Mahnstufen, automatischem Mahnlauf und Versand per E-Mail oder PDF
+- **Mahnlauf** - Überfällige Rechnungen je Kunde gebündelt mahnen, mit Vorschau, korrigierbarem Empfänger und Versand per E-Mail oder PDF
 - **Eingangsrechnungen** - Erfassung und Verwaltung von Lieferantenrechnungen mit KI/OCR-Erkennung, Genehmigungsworkflow und Buchung auf Sachkonten
 - **Transaktionen** - Banktransaktionen und Kontobewegungen, die automatisch über HBCI/FinTS importiert werden
 - **Transaktionszuordnungen** - Zuordnung von Banktransaktionen zu Aufträgen und Rechnungen mit Vorschlägen auf Basis von Verwendungszweck und Betrag
@@ -30,7 +30,7 @@ Die Bereiche der Buchhaltung greifen eng ineinander:
 ## Seiten in diesem Kapitel
 
 - [Provisionen](1-provisionen.md) - Provisionsabrechnungen für Vertriebsmitarbeiter verwalten
-- [Mahnungen](2-mahnungen.md) - Mahnwesen für offene Rechnungen mit Mahnstufen und automatischem Mahnlauf
+- [Mahnlauf](2-mahnlauf.md) - Überfällige Rechnungen je Kunde gebündelt mahnen, mit Vorschau und Einzelversand
 - [Eingangsrechnungen](3-eingangsrechnungen.md) - Lieferantenrechnungen mit KI/OCR erfassen und verbuchen
 - [Transaktionen](4-transaktionen.md) - Banktransaktionen anzeigen und durchsuchen
 - [Transaktionszuordnungen](5-transaktionszuordnungen.md) - Transaktionen Aufträgen zuordnen
