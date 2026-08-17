@@ -16,6 +16,7 @@ Every data table in Nuxbe consists of the following areas:
 | **Sidebar** | Expandable panel on the right with advanced functions for filters, columns, grouping, and export |
 | **Table content** | The actual data rows with entries |
 | **Pagination** | Navigation between pages at the bottom of the table |
+| **View switcher** | Toolbar above the table, shown when the list offers views beyond the table |
 
 ## General Usage
 
@@ -35,6 +36,8 @@ The pagination shows the current page number and the total number of results. Yo
 - Enter a specific page number directly to jump to that page.
 - Change the number of entries displayed per page using the dropdown.
 
+Some tables do not page but load while you scroll. There the page navigation is missing; instead the table appends the next block automatically at the end of the list. See [Switching Views](9-views.md).
+
 > **Note:** Filters, search, and sort order affect the pagination. When you apply filters, the number of pages may decrease because fewer entries are shown.
 
 ## Pages in This Chapter
@@ -47,6 +50,7 @@ The pagination shows the current page number and the total number of results. Yo
 - [Exporting](6-exporting.md) — Export table contents as a file
 - [Selecting Rows](7-selecting-rows.md) — Select one or more rows for actions
 - [Deleted Records](8-deleted-records.md) — Show deleted entries and restore them
+- [Switching Views](9-views.md) — Switch between table, grid and Kanban
 
 ## Related Topics
 
