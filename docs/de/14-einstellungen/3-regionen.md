@@ -46,4 +46,4 @@ Unter **Einstellungen > Allgemein > Regionen** verwalten Sie Regionen innerhalb 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
 - [Länder](2-laender.md) - Länder verwalten
 - [Standorte](10-standorte.md) - Standorte mit Regionen
-- [Adressen](../2-kontakte/2-adressen.md) - Adressen mit Regionen
+- [Adressen](../2-kontakte/3-adressen.md) - Adressen mit Regionen

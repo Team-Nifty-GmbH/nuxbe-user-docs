@@ -41,7 +41,7 @@ Details on these fields can be found in the [Purchases](6-purchases.md) document
 
 After saving the order, you will see the **Schedule** button (blue clock icon) in the sidebar. Click it to open the schedule dialog.
 
-![Schedule for purchase subscription](../../screenshots/167-purchase-sub-schedule.png)
+<!-- Screenshot missing: Schedule for purchase subscription (../../screenshots/167-purchase-sub-schedule.png) -->
 
 The schedule offers the same options as the sales subscription:
 

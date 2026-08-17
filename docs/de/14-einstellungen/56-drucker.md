@@ -246,4 +246,4 @@ Falls die Bridge sich nicht verbinden kann:
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
 - [Druckaufträge](55-druckauftraege.md) - Druckaufträge ansehen und verwalten
-- [Benutzer](../14-einstellungen/39-benutzer.md) - Benutzer verwalten
+- [Benutzer](16-benutzer.md) - Benutzer verwalten

@@ -69,4 +69,4 @@ Bei der Anlage eines neuen Kontakts oder Leads können Sie die Datenquelle ausw�
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
 - [Kontakte](../2-kontakte/0-index.md) - Kontakte mit Datenquellen
-- [Leads](../4-leads/0-index.md) - Lead-Tracking mit Datenquellen
+- [Leads](../3-verkauf/0-index.md) - Lead-Tracking mit Datenquellen

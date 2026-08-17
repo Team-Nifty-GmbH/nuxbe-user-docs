@@ -117,5 +117,6 @@ The settings are divided into the following categories:
 - [Logs](54-logs.md) - System logs
 - [Print Jobs](55-print-jobs.md) - Print jobs
 - [Printers](56-printers.md) - Manage printers
+- [Security Settings](57-security-settings.md) - Sign-in methods, mandatory 2FA and resetting a user's second factor
 
 > **Note:** Changes to the settings can affect the entire application. Only make changes if you are aware of their implications.

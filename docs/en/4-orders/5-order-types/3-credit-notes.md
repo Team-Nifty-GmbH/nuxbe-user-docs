@@ -26,7 +26,7 @@ A credit note is always created from an existing order that already has an invoi
 
 1. Click **Create Credit Note** in the sidebar.
 
-   ![Creating a credit note from the sidebar](../../screenshots/159-credit-note-create.png)
+   <!-- Screenshot missing: Creating a credit note from the sidebar (../../screenshots/159-credit-note-create.png) -->
 
 2. Nuxbe automatically creates a new document of the type **Credit Note**.
 3. The data from the original document is carried over:
@@ -45,7 +45,7 @@ After creation, you can adjust the positions of the credit note. This is particu
 
 The amounts in a credit note are always **negative** (with a minus sign). This means: the amount is credited to the customer and reduces their outstanding balance.
 
-![Credit note detail view with negative amounts](../../screenshots/160-credit-note-detail.png)
+<!-- Screenshot missing: Credit note detail view with negative amounts (../../screenshots/160-credit-note-detail.png) -->
 
 ### Step 4: Save
 

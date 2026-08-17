@@ -51,4 +51,4 @@ Unter **Einstellungen > Allgemein > Länder** verwalten Sie die Länderstammdate
 - [Regionen](3-regionen.md) - Regionen innerhalb von Ländern verwalten
 - [Währungen](4-waehrungen.md) - Währungen verwalten
 - [Sprachen](5-sprachen.md) - Sprachen verwalten
-- [Adressen](../2-kontakte/2-adressen.md) - Adressen mit Ländern
+- [Adressen](../2-kontakte/3-adressen.md) - Adressen mit Ländern

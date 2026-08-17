@@ -92,5 +92,5 @@ Benutzer können ihre persönlichen Sprach- und Währungseinstellungen in ihrem 
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
 - [Systemeinstellungen](48-system.md) - Erweiterte Systemkonfiguration
-- [Sprachen](../14-einstellungen/24-sprachen.md) - Verfügbare Sprachen verwalten
-- [Währungen](../14-einstellungen/22-waehrungen.md) - Währungen verwalten
+- [Sprachen](5-sprachen.md) - Verfügbare Sprachen verwalten
+- [Währungen](4-waehrungen.md) - Währungen verwalten

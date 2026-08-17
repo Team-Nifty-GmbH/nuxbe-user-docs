@@ -16,7 +16,7 @@ A quote is a non-binding cost estimate that you send to a customer. It is the ty
 2. Click **New**.
 3. Select **Quote** as the **Order Type**.
 
-   ![Selecting the Quote order type](../../screenshots/152-quote-create.png)
+   <!-- Screenshot missing: Selecting the Quote order type (../../screenshots/152-quote-create.png) -->
 
 4. Select the **Contact** (customer).
 5. Fill in the header data (payment type, payment terms, price list, etc.).
@@ -40,7 +40,7 @@ In the **Texts** tab, you can add a header text (e.g. "Thank you for your inquir
 
 The detail view of a quote follows the general [order detail view](../2-order-detail.md). You will find:
 
-![Detail view of a quote](../../screenshots/153-quote-detail.png)
+<!-- Screenshot missing: Detail view of a quote (../../screenshots/153-quote-detail.png) -->
 
 - **Left column** -- Contact, billing address, delivery address, order information, and states
 - **Center area** -- Header data, positions, and texts as tabs
@@ -65,7 +65,7 @@ When the customer accepts the quote, create a binding order from it:
 4. Review the carried-over data and adjust if needed.
 5. Click **Save**.
 
-![Converting a quote to an order](../../screenshots/154-quote-to-order.png)
+<!-- Screenshot missing: Converting a quote to an order (../../screenshots/154-quote-to-order.png) -->
 
 The new order is automatically linked to the original quote in the document chain. You can view this link in the right column under **Related Documents**.
 

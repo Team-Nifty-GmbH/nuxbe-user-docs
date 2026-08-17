@@ -19,7 +19,7 @@ In a sales order, you are the supplier and your customer is the recipient. In a 
 2. Click **New**.
 3. Select **Purchase** as the **Order Type**.
 
-   ![Creating a purchase order](../../screenshots/163-purchase-create.png)
+   <!-- Screenshot missing: Creating a purchase order (../../screenshots/163-purchase-create.png) -->
 
 4. Select the **Contact** (supplier).
 5. Fill in the header data.
@@ -39,7 +39,7 @@ Add the products or services you want to order from the supplier.
 
 The purchase order includes an approval workflow that ensures orders are reviewed and approved before being placed. This protects against unauthorized or incorrect orders and serves as budget control.
 
-![Approval workflow in the purchase order](../../screenshots/164-purchase-approval.png)
+<!-- Screenshot missing: Approval workflow in the purchase order (../../screenshots/164-purchase-approval.png) -->
 
 ### Assigning an Approver
 
@@ -65,7 +65,7 @@ The process works as follows:
 
 In the state section, you will find three fields for the supplier's payment terms. This information typically comes from the supplier's invoice or agreed conditions.
 
-![Payment terms in the purchase order](../../screenshots/165-purchase-payment-terms.png)
+<!-- Screenshot missing: Payment terms in the purchase order (../../screenshots/165-purchase-payment-terms.png) -->
 
 ### Payment Target
 
@@ -106,7 +106,7 @@ The **Performance Period Start** and **Performance Period End** fields indicate 
 
 If a supplier invoice document has been attached to your purchase order, you can preview it directly within the order. The **Invoice Preview** section displays the document in an embedded viewer.
 
-![Invoice preview of the supplier invoice](../../screenshots/166-purchase-invoice-preview.png)
+<!-- Screenshot missing: Invoice preview of the supplier invoice (../../screenshots/166-purchase-invoice-preview.png) -->
 
 Click **View** to open the full invoice in a larger window.
 
