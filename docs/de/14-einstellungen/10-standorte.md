@@ -70,4 +70,4 @@ Jedem Standort können eigene Feiertage zugeordnet werden. Dies ist besonders wi
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
 - [Länder](2-laender.md) - Länderverwaltung
 - [Regionen](3-regionen.md) - Regionen für detaillierte Zuordnung
-- [Mitarbeiter](../5-mitarbeiter/0-index.md) - Mitarbeiterzuordnung zu Standorten
+- [Mitarbeiter](../7-personalwesen/0-index.md) - Mitarbeiterzuordnung zu Standorten

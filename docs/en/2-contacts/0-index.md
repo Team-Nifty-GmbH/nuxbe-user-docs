@@ -34,7 +34,9 @@ In the detail view you will find:
 - [Contact Details](2-contact-detail.md) - Detail view of a contact
 - [Addresses](3-addresses.md) - Manage contact addresses
 - [Communication](4-communication.md) - Manage contact methods
-- [Assign Representative](5-assign-representative.md) - Assign a new representative to multiple contacts at once
+- [Merge Contacts](5-merge-contacts.md) - Combine duplicate contacts into one
+- [Assign Representative](6-assign-representative.md) - Assign a new representative to multiple contacts at once
+- [Communication Log](7-communication-log.md) - Record emails, letters and phone calls on a contact
 
 ## Related Topics
 

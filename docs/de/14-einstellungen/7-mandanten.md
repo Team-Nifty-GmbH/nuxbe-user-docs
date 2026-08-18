@@ -97,5 +97,5 @@ Das System unterstützt mehrere Mandanten gleichzeitig. Dies ermöglicht:
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
 - [Bankverbindungen](21-bankverbindungen.md) - Bankverbindungen anlegen und verwalten
 - [Länder](2-laender.md) - Länderverwaltung
-- [Rechnungen](../10-rechnungen/0-index.md) - Rechnungen mit Mandantendaten
-- [Angebote](../8-angebote/0-index.md) - Angebote mit Mandantendaten
+- [Rechnungen](../4-auftraege/0-index.md) - Rechnungen mit Mandantendaten
+- [Angebote](../4-auftraege/5-auftragsarten/1-angebote.md) - Angebote mit Mandantendaten

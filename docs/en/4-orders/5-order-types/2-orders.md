@@ -36,7 +36,7 @@ All positions, prices, and contact data are carried over automatically. The new 
 
 The detail view of an order is the most comprehensive of all order types. It provides access to all features that Nuxbe offers for order management.
 
-![Detail view of an order](../../screenshots/155-order-detail.png)
+<!-- Screenshot missing: Detail view of an order (../../screenshots/155-order-detail.png) -->
 
 ### Left Column (Sidebar)
 
@@ -85,7 +85,7 @@ The right column displays:
 
 An order has three independent states. They are displayed as dropdown fields in the left column.
 
-![State management of an order](../../screenshots/158-order-states.png)
+<!-- Screenshot missing: State management of an order (../../screenshots/158-order-states.png) -->
 
 ### Order State
 
@@ -105,7 +105,7 @@ The delivery state shows the shipping status. Typical values include "Open", "Pa
 
 An order can be locked to prevent accidental changes. Locking is typically performed automatically by the system, e.g. when an invoice has been generated. You can also toggle the lock status manually.
 
-![Locking an order](../../screenshots/156-order-lock.png)
+<!-- Screenshot missing: Locking an order (../../screenshots/156-order-lock.png) -->
 
 ### How to Lock or Unlock an Order
 
@@ -127,7 +127,7 @@ An order can be locked to prevent accidental changes. Locking is typically perfo
 
 From an order, you can create various follow-up documents. The options are available via the **Replicate** button in the top bar.
 
-![Creating follow-up documents from an order](../../screenshots/157-order-follow-ups.png)
+<!-- Screenshot missing: Creating follow-up documents from an order (../../screenshots/157-order-follow-ups.png) -->
 
 ### Creating an Invoice
 

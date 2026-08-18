@@ -26,7 +26,7 @@ A split order can only be created when the parent order does **not yet have an i
 
 1. Click **Create Split Order** in the sidebar.
 
-   ![Creating a split order from the sidebar](../../screenshots/168-split-order-create.png)
+   <!-- Screenshot missing: Creating a split order from the sidebar (../../screenshots/168-split-order-create.png) -->
 
 2. Nuxbe automatically creates a new document of type **Split Order**.
 3. The data from the parent order is carried over:
@@ -48,7 +48,7 @@ After creating, adjust the positions for this partial delivery or partial invoic
 
 Split orders include an extended amount overview that shows how the partial amounts add up to the total.
 
-![Amount overview of a split order](../../screenshots/169-split-amount-overview.png)
+<!-- Screenshot missing: Amount overview of a split order (../../screenshots/169-split-amount-overview.png) -->
 
 ### Subtotal Net (This Split Order)
 
@@ -76,7 +76,7 @@ The grand total of all split orders combined. This value should match the origin
 
 Once all split orders have received an invoice number, a **Final Invoice** can be created from the parent order.
 
-![Creating a final invoice](../../screenshots/170-final-invoice.png)
+<!-- Screenshot missing: Creating a final invoice (../../screenshots/170-final-invoice.png) -->
 
 ### What Is the Final Invoice?
 

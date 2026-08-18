@@ -54,4 +54,4 @@ Die als Standard markierte Sprache wird für die Benutzeroberfläche und als Fal
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
 - [Länder](2-laender.md) - Länderzuordnung zu Sprachen
-- [Benutzer](../3-benutzerverwaltung/0-index.md) - Spracheinstellungen für Benutzer
+- [Benutzer](16-benutzer.md) - Spracheinstellungen für Benutzer

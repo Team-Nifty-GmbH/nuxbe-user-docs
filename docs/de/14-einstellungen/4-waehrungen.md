@@ -54,4 +54,4 @@ Die als Standard markierte Währung wird automatisch bei der Anlage neuer Datens
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
 - [Länder](2-laender.md) - Länderzuordnung zu Währungen
 - [Produkte](../6-produkte/0-index.md) - Preise in verschiedenen Währungen
-- [Rechnungen](../10-rechnungen/0-index.md) - Rechnungen mit Währungen
+- [Rechnungen](../4-auftraege/0-index.md) - Rechnungen mit Währungen

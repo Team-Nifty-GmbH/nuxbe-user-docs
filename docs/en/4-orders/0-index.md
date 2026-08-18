@@ -43,6 +43,7 @@ In the detail view you will find:
 - [Order Positions](3-order-positions.md) - Manage positions within an order
 - [Order Positions List](4-order-positions-list.md) - All positions across orders
 - [Order Types](5-order-types/0-index.md) - Details on each order type (quotes, orders, subscriptions, purchases, etc.)
+- [Create Documents](6-create-documents.md) - Turn a quote into an order, an order into a return, an invoice into a credit note
 
 ## Related Topics
 

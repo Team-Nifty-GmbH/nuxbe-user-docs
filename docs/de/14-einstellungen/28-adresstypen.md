@@ -82,4 +82,4 @@ Mit der Option **Ist eindeutig** können Sie sicherstellen, dass:
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
 - [Kontakte](../2-kontakte/0-index.md) - Kontakte verwalten
-- [Adressen](../2-kontakte/2-adressen.md) - Adressen zu Kontakten hinzufügen
+- [Adressen](../2-kontakte/3-adressen.md) - Adressen zu Kontakten hinzufügen

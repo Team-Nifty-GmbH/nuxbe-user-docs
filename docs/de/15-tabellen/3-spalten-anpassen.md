@@ -56,6 +56,38 @@ Sie können diese Spalte nun wie gewohnt filtern, z. B. mit `>=15.01.2026`, um a
 
 Die Reihenfolge der Spalten in der Tabelle entspricht der Reihenfolge in der Spaltenliste der Seitenleiste. Die ersten aktivierten Spalten erscheinen links, die später aktivierten rechts.
 
+## Spalten anheften
+
+Bei breiten Tabellen scrollen Sie waagerecht und verlieren dabei leicht den Bezug, zu welchem Datensatz eine Zeile gehört. Angeheftete Spalten bleiben beim waagerechten Scrollen am linken Rand stehen.
+
+1. Fahren Sie mit der Maus über die Überschrift der Spalte, die stehen bleiben soll.
+
+2. Klicken Sie auf das **Pin-Symbol** in der Überschrift.
+
+<!-- Screenshot: Spaltenüberschrift mit hervorgehobenem Pin-Symbol -->
+
+3. Die Spalte rückt an den linken Rand und bleibt dort, während Sie den Rest der Tabelle nach rechts scrollen. Das Pin-Symbol bleibt farbig markiert.
+
+4. Ein erneuter Klick auf das Pin-Symbol löst die Spalte wieder.
+
+Sie können mehrere Spalten gleichzeitig anheften, etwa Belegnummer und Kontakt in der Auftragsliste.
+
+> **Hinweis:** Heften Sie nicht zu viele Spalten an. Der angeheftete Bereich verkleinert die Fläche, die zum Scrollen übrig bleibt.
+
+## Spaltenbreite ändern
+
+Sie können jede Spalte auf die Breite ziehen, die Sie brauchen.
+
+1. Fahren Sie an den rechten Rand einer Spaltenüberschrift. Der Mauszeiger wird zum Verschiebe-Zeiger.
+
+2. Ziehen Sie mit gedrückter Maustaste nach links oder rechts.
+
+<!-- Screenshot: Ziehgriff am rechten Rand einer Spaltenüberschrift -->
+
+3. Lassen Sie die Maustaste los. Die Breite gilt sofort.
+
+Die eingestellten Breiten gehören zu Ihrer persönlichen Ansicht und stehen beim nächsten Aufruf der Tabelle wieder so. **Layout zurücksetzen** (siehe unten) verwirft sie zusammen mit den übrigen Spalteneinstellungen.
+
 ## Layout speichern, teilen und zurücksetzen
 
 Ihre Spalten-Anpassungen werden **automatisch** für Ihren persönlichen Account gespeichert. Sie müssen nichts manuell sichern -- wenn Sie eine Spalte ein- oder ausblenden, behält Nuxbe das beim nächsten Aufruf der Tabelle so. Diese persönliche Ansicht hat Vorrang vor dem Mandanten-Standard.

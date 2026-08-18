@@ -198,5 +198,5 @@ Zugriff auf Aktivitätsprotokolle sollte auf folgende Personengruppen beschränk
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
 - [Protokolle](54-protokolle.md) - System- und Fehlerprotokolle
-- [Benutzer](../14-einstellungen/39-benutzer.md) - Benutzerverwaltung
-- [Berechtigungen](../14-einstellungen/40-berechtigungen.md) - Zugriffskontrolle
+- [Benutzer](16-benutzer.md) - Benutzerverwaltung
+- [Berechtigungen](17-berechtigungen.md) - Zugriffskontrolle

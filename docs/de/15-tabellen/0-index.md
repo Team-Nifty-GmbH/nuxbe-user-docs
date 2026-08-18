@@ -16,6 +16,7 @@ Jede Datentabelle in Nuxbe besteht aus den folgenden Bereichen:
 | **Seitenleiste** | Ausklappbarer Bereich rechts mit erweiterten Funktionen für Filter, Spalten, Gruppierung und Export |
 | **Tabelleninhalt** | Die eigentlichen Datenzeilen mit den Einträgen |
 | **Paginierung** | Navigation zwischen Seiten am unteren Rand der Tabelle |
+| **Ansichtswechsel** | Symbolleiste über der Tabelle, sofern die Liste neben der Tabelle weitere Ansichten anbietet |
 
 ## Allgemeine Bedienung
 
@@ -35,6 +36,8 @@ Die Paginierung zeigt die aktuelle Seitennummer und die Gesamtanzahl der Seiten.
 - Eine bestimmte Seitennummer direkt eingeben, um dorthin zu springen.
 - Die Anzahl der angezeigten Einträge pro Seite über das Dropdown ändern.
 
+Manche Tabellen blättern nicht, sondern laden beim Scrollen nach. Dort entfällt die Seitennavigation, dafür hängt die Tabelle am Ende der Liste automatisch den nächsten Block an. Siehe [Ansichten wechseln](9-ansichten.md).
+
 > **Hinweis:** Filter, Suche und Sortierung wirken sich auf die Paginierung aus. Wenn Sie Filter setzen, verringert sich möglicherweise die Seitenanzahl, da weniger Einträge angezeigt werden.
 
 ## Seiten in diesem Kapitel
@@ -47,6 +50,7 @@ Die Paginierung zeigt die aktuelle Seitennummer und die Gesamtanzahl der Seiten.
 - [Exportieren](6-exportieren.md) - Tabelleninhalte als Datei exportieren
 - [Zeilen auswählen](7-zeilen-auswaehlen.md) - Einzelne oder mehrere Zeilen für Aktionen markieren
 - [Gelöschte Datensätze](8-geloeschte-datensaetze.md) - Gelöschte Einträge anzeigen und wiederherstellen
+- [Ansichten wechseln](9-ansichten.md) - Zwischen Tabelle, Raster und Kanban umschalten
 
 ## Weiterführende Themen
 

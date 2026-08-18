@@ -79,4 +79,4 @@ Rabattgruppen können zusätzlich zu Preislisten verwendet werden. Erst wird der
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
 - [Preislisten](15-preislisten.md) - Kundenspezifische Preise verwalten
-- [Kontakte](../3-kontakte/0-index.md) - Kunden und Lieferanten verwalten
+- [Kontakte](../2-kontakte/0-index.md) - Kunden und Lieferanten verwalten

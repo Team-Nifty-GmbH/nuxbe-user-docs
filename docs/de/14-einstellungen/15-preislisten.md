@@ -105,5 +105,5 @@ Die Preisberechnung erfolgt in dieser Reihenfolge:
 
 - [Einstellungen](0-index.md) - Zurück zur Einstellungsübersicht
 - [Rabattgruppen](13-rabattgruppen.md) - Automatische Rabatte verwalten
-- [Produkte](../5-produkte/0-index.md) - Produktverwaltung
-- [Kontakte](../3-kontakte/0-index.md) - Preislisten Kunden zuordnen
+- [Produkte](../6-produkte/0-index.md) - Produktverwaltung
+- [Kontakte](../2-kontakte/0-index.md) - Preislisten Kunden zuordnen

@@ -36,7 +36,7 @@ A return is always created from an existing order that already has an invoice nu
 
 1. Click **Create Return** in the sidebar.
 
-   ![Creating a return from the sidebar](../../screenshots/161-return-create.png)
+   <!-- Screenshot missing: Creating a return from the sidebar (../../screenshots/161-return-create.png) -->
 
 2. Nuxbe automatically creates a new document of the type **Return**.
 3. The data from the original document is carried over:
@@ -55,7 +55,7 @@ After creation, adjust the positions of the return to match the goods actually b
 
 The amounts in a return are always **negative** (with a minus sign).
 
-![Return detail view with adjusted quantities](../../screenshots/162-return-detail.png)
+<!-- Screenshot missing: Return detail view with adjusted quantities (../../screenshots/162-return-detail.png) -->
 
 ### Step 4: Save
 
