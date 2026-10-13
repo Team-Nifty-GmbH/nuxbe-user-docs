@@ -30,7 +30,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.5",
-        "team-nifty-gmbh/flux-erp": "^1.0",
+        "team-nifty-gmbh/flux-erp": "^1.12",
         "team-nifty-gmbh/nuxbe-knowledge": "*"
     },
     "require-dev": {
