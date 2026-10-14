@@ -1,6 +1,22 @@
 # Drucker
 
-In der Druckerverwaltung konfigurieren Sie alle verfügbaren Drucker für die Anwendung. Hier richten Sie Netzwerkdrucker, lokale Drucker und Druckserver ein.
+In der Druckerverwaltung sehen Sie alle Drucker, die über eine Printer Bridge an die Anwendung angebunden sind, und legen fest, welche davon in den Auswahllisten erscheinen.
+
+## Wie ein Drucker in die Anwendung kommt
+
+Drucker werden in der Anwendung nicht von Hand angelegt. Sie kommen von der **Printer Bridge**, einem kleinen Programm auf einem Rechner in Ihrem Netz (zum Beispiel einem Mini PC oder Raspberry Pi), auf dem der Druckdienst **CUPS** läuft.
+
+- Jede Druckerwarteschlange in CUPS wird zu einem Drucker in der Anwendung.
+- Die Bridge prüft in festen Abständen (Standard: alle 5 Minuten), welche Warteschlangen es gibt. Neue Warteschlangen legt sie als Drucker an, geänderte aktualisiert sie, entfernte löscht sie.
+- Die Papierformate eines Druckers stammen aus seinem Treiber in CUPS. In der Anwendung lassen sie sich nicht bearbeiten.
+- Alle Drucker einer Bridge tragen deren Instanznamen als **Spooler**.
+
+Daraus folgt:
+
+- **Drucker hinzufügen:** Warteschlange in CUPS auf dem Bridge Rechner anlegen. Drucker, die sich im Netz selbst anmelden (treiberlos über IPP), legt CUPS meist automatisch an. Etikettendrucker und ältere Geräte brauchen einen Treiber auf dem Bridge Rechner.
+- **Fehlendes Papierformat:** Das Format muss im Treiber des Druckers in CUPS ergänzt werden. Nach der nächsten Prüfung durch die Bridge steht es in der Auswahl.
+- **Drucker tauschen:** In CUPS die Adresse der bestehenden Warteschlange auf das neue Gerät ändern. Der Drucker behält so in der Anwendung seinen Alias und seine Benutzerzuweisungen. Eine neue Warteschlange wird dagegen zu einem neuen Drucker ohne Zuweisungen.
+- **Drucker entfernen:** Warteschlange in CUPS löschen. Wird nur der Drucker in der Anwendung gelöscht, legt die Bridge ihn bei der nächsten Prüfung wieder an. Soll ein Drucker nur nicht mehr angeboten werden, schalten Sie ihn unsichtbar.
 
 ## Navigation
 
@@ -8,239 +24,95 @@ In der Druckerverwaltung konfigurieren Sie alle verfügbaren Drucker für die An
 
    ![Drucker verwalten](../screenshots/100-einstellungen-drucker.png)
 
-2. Die Tabelle zeigt alle konfigurierten Drucker mit Namen, Standort und Status.
-
-## Übersicht
-
-Die Drucker-Übersicht listet alle für die Anwendung verfügbaren Drucker auf.
+2. Die Tabelle zeigt alle Drucker aller Bridges.
 
 ### Spalten der Drucker-Liste
 
-- **Name** - Der Name des Druckers
-- **Alias** - Ein alternativer, sprechender Name (optional)
-- **Spooler** - Der Name des Druckserver-Spoolers
-- **Standort** - Physischer Standort des Druckers (z.B. "Lager", "Büro 3. OG")
-- **Modell** - Hersteller und Modellbezeichnung
-- **Papierformate** - Unterstützte Formate (A4, A5, Letter, etc.)
-- **Status** - Ob der Drucker aktiv ist
-- **Aktionen** - Verfügbare Aktionen
-
-## Drucker anlegen
-
-So fügen Sie einen neuen Drucker hinzu:
-
-1. Klicken Sie auf **Neu**.
-2. Geben Sie im Dialog die erforderlichen Informationen ein:
-
-### Grundeinstellungen
-
-- **Name** - Der technische Name des Druckers (Pflichtfeld)
-- **Alias** - Ein benutzerfreundlicher Anzeigename (optional)
-- **Spooler-Name** - Der Name des Druckspoolers/Druckservers (Pflichtfeld)
-
-### Standort und Modell
-
-- **Standort** - Wo sich der Drucker physisch befindet (optional)
-- **Hersteller und Modell** - Modellbezeichnung (optional, z.B. "HP LaserJet Pro M404dn")
-
-### Papierformate
-
-- **Unterstützte Formate** - Wählen Sie alle Formate, die der Drucker verarbeiten kann:
-  - A4 (210 × 297 mm)
-  - A5 (148 × 210 mm)
-  - Letter (216 × 279 mm)
-  - Legal (216 × 356 mm)
-  - Benutzerdefinierte Formate
-
-### Status
-
-- **Aktiv** - Aktivieren Sie den Schalter, um den Drucker sofort verfügbar zu machen
-
-3. Klicken Sie auf **Speichern**.
-
-Der neue Drucker erscheint in der Liste und steht für Druckaufträge zur Verfügung.
+- **Name:** Name der Warteschlange, wie CUPS ihn meldet
+- **Alias:** Ein sprechender Name, den Sie selbst vergeben
+- **Spooler:** Instanzname der Bridge, von der der Drucker kommt
+- **Standort:** Standort aus CUPS
+- **Modell:** Hersteller und Modell aus dem Treiber
+- **Aktiv:** Ob der Drucker aktiv ist
+- **Sichtbar:** Ob der Drucker in den Auswahllisten erscheint
 
 ## Drucker bearbeiten
 
-Um die Einstellungen eines Druckers zu ändern:
-
-1. Klicken Sie in der Druckerliste auf das Bearbeiten-Symbol.
-2. Ändern Sie die gewünschten Einstellungen.
+1. Klicken Sie in der Zeile des Druckers auf **Bearbeiten**.
+2. Ändern Sie den **Alias** oder schalten Sie **Sichtbar** um.
 3. Klicken Sie auf **Speichern**.
 
-Änderungen werden sofort wirksam und betreffen neue Druckaufträge.
+Mehr lässt sich an einem Drucker in der Anwendung nicht einstellen, alles andere kommt aus CUPS.
 
-## Drucker aktivieren oder deaktivieren
+## Drucker löschen
 
-Sie können Drucker temporär deaktivieren, ohne diese zu löschen:
+Klicken Sie in der Zeile des Druckers auf **Löschen** und bestätigen Sie. Solange die Warteschlange in CUPS noch existiert, legt die Bridge den Drucker bei der nächsten Prüfung wieder an.
 
-1. Klicken Sie auf das Bearbeiten-Symbol.
-2. Deaktivieren Sie den Schalter **Aktiv**.
-3. Klicken Sie auf **Speichern**.
+## Drucker Benutzern zuweisen
 
-Inaktive Drucker:
-- Erscheinen nicht mehr in Drucker-Auswahllisten
-- Verarbeiten keine neuen Druckaufträge
-- Behalten ihre Konfiguration und Historie
+Beim Drucken bietet die Anwendung jedem Benutzer nur die Drucker an, die ihm zugewiesen sind. Die Zuweisung erfolgt am Benutzer, nicht am Drucker:
 
-Dies ist nützlich bei:
-- Wartungsarbeiten am Drucker
-- Temporären Ausfällen
-- Testen neuer Druckerkonfigurationen
+1. Navigieren Sie zu **Einstellungen > Benutzer & Rechte > Benutzer** und öffnen Sie den Benutzer.
+2. Wählen Sie im Feld **Drucker** alle Drucker, die der Benutzer verwenden soll. Mehrere sind möglich.
+3. Wählen Sie darunter den **Standarddrucker** und die **Standardgröße**. Beide sind im Druckdialog vorausgewählt.
+4. Speichern Sie den Benutzer.
 
-## Drucker-Spooler
-
-Die Anwendung verwendet einen Spooler-basierten Ansatz für das Drucken:
-
-### Was ist ein Spooler?
-
-Ein Spooler (Print Spooler) ist ein Druckserver-Dienst, der:
-- Druckaufträge entgegennimmt
-- Diese in einer Warteschlange verwaltet
-- Sie an physische Drucker weiterleitet
-- Den Status überwacht
-
-### Spooler-Name
-
-Der **Spooler-Name** identifiziert eine Gruppe von Druckern auf einem Druckserver. Mehrere Drucker können denselben Spooler verwenden.
-
-Beispiel:
-- Spooler: "Lager-Druckserver"
-  - Drucker 1: "Lager-Etikettendrucker"
-  - Drucker 2: "Lager-Laserdrucker"
-  - Drucker 3: "Versand-Etiketten"
+> **Hinweis:** Im Feld **Drucker** erscheinen nur Drucker, die aktiv und sichtbar sind. Blenden Sie Drucker, die nicht gebraucht werden, deshalb zuerst aus und weisen Sie danach zu.
 
 ## Bridge-Konfiguration generieren
 
-Für die Verbindung zwischen der Anwendung und physischen Druckern benötigen Sie eine Bridge-Konfiguration:
+Für die Verbindung zwischen der Anwendung und der Bridge benötigen Sie eine Konfiguration:
 
 1. Klicken Sie auf **Bridge-Konfiguration generieren**.
-2. Geben Sie einen eindeutigen Namen für die Instanz ein (z.B. "Hauptstandort-Drucker").
-3. Optional: Geben Sie eine Beschreibung ein.
-4. Klicken Sie auf **Generieren**.
-5. Eine Konfigurationsdatei wird heruntergeladen.
+2. Geben Sie einen eindeutigen **Instanznamen** ein (zum Beispiel "Hauptstandort-Drucker"). Er wird zum Spooler aller Drucker dieser Bridge.
+3. Passen Sie bei Bedarf die Prüfintervalle für Drucker und Druckaufträge, den API Port und die WebSocket Option an.
+4. Klicken Sie auf **Konfiguration generieren** und kopieren Sie das Ergebnis in die Konfiguration der Bridge.
 
-Diese Konfigurationsdatei enthält:
-- Einen API-Token für die Authentifizierung
-- Die URL Ihrer Anwendung
-- Spooler-Konfigurationen
+Die Konfiguration enthält einen API Token für die Anmeldung der Bridge. Gibt es zum Instanznamen schon einen Token, fragt die Anwendung vor dem Neuerzeugen nach. Ein neuer Token macht den alten ungültig, die Bridge muss dann die neue Konfiguration bekommen.
 
-> **Sicherheit:** Der generierte Token ermöglicht Zugriff auf das Drucksystem. Behandeln Sie diese Datei vertraulich.
-
-### Bridge installieren
-
-1. Installieren Sie die FluxERP Printer Bridge auf dem Computer, der mit den Druckern verbunden ist.
-2. Importieren Sie die generierte Konfigurationsdatei in die Bridge.
-3. Die Bridge verbindet sich automatisch mit der Anwendung.
-4. Drucker werden synchronisiert und stehen zur Verfügung.
+> **Sicherheit:** Der Token ermöglicht Zugriff auf das Drucksystem. Behandeln Sie die Konfiguration vertraulich.
 
 ## Spooler löschen
 
-Um einen kompletten Spooler samt aller zugehörigen Drucker zu entfernen:
+Um eine Bridge samt aller ihrer Drucker zu entfernen:
 
 1. Klicken Sie auf **Spooler löschen**.
-2. Wählen Sie den zu löschenden Spooler aus der Liste.
+2. Wählen Sie den Spooler aus.
 3. Bestätigen Sie den Löschvorgang.
 
-> **Warnung:** Diese Aktion löscht alle Drucker, die diesem Spooler zugeordnet sind, sowie den zugehörigen API-Token. Die Drucker stehen dann nicht mehr zur Verfügung.
-
-Dies ist nützlich, wenn:
-- Ein Standort geschlossen wird
-- Die Druckserver-Infrastruktur geändert wird
-- Eine komplette Neukonfiguration erforderlich ist
-
-## Drucker-Zuordnung
-
-Administratoren können festlegen, welche Benutzer Zugriff auf welche Drucker haben:
-
-### Benutzer zu Drucker zuordnen
-
-1. Klicken Sie bei einem Drucker auf **Benutzer verwalten**.
-2. Wählen Sie die Benutzer aus, die diesen Drucker verwenden dürfen.
-3. Klicken Sie auf **Speichern**.
-
-Benutzer sehen nur Drucker, für die sie berechtigt sind.
-
-### Standard-Drucker festlegen
-
-Benutzer können in ihrem Profil einen Standard-Drucker festlegen:
-1. Navigieren Sie zu **Profil > Einstellungen**.
-2. Wählen Sie unter **Standard-Drucker** den bevorzugten Drucker.
-3. Dieser wird automatisch vorausgewählt bei Druckaufträgen.
-
-## Drucker-Status überwachen
-
-Die Drucker-Übersicht zeigt den aktuellen Status:
-
-### Online (Aktiv)
-
-- **Bedeutung** - Der Drucker ist betriebsbereit und nimmt Aufträge entgegen
-- **Anzeige** - Grünes Badge
-- **Hinweis** - Normale Funktion
-
-### Offline (Inaktiv)
-
-- **Bedeutung** - Der Drucker ist deaktiviert oder nicht erreichbar
-- **Anzeige** - Rotes Badge
-- **Ursachen** - Manuell deaktiviert, Bridge offline, Drucker ausgeschaltet
-
-### Wartung
-
-- **Bedeutung** - Der Drucker befindet sich im Wartungsmodus
-- **Anzeige** - Gelbes Badge
-- **Hinweis** - Keine neuen Aufträge, wartende Aufträge bleiben in Queue
-
-## Unterstützte Papierformate
-
-Die Anwendung unterstützt folgende Standardformate:
-
-- **A4** - 210 × 297 mm (Standard für Dokumente)
-- **A5** - 148 × 210 mm (Halbe A4-Größe)
-- **Letter** - 216 × 279 mm (US-Standard)
-- **Legal** - 216 × 356 mm (US-Legal)
-- **A6** - 105 × 148 mm (Postkartengröße)
-- **Roll** - Für Etikettendrucker mit Rollenpapier
-- **Custom** - Benutzerdefinierte Größen
-
-Wählen Sie nur Formate aus, die der Drucker physisch verarbeiten kann.
+> **Warnung:** Diese Aktion löscht alle Drucker dieses Spoolers und macht den zugehörigen API Token ungültig.
 
 ## Fehlerbehebung
 
-### Drucker erscheint nicht in Auswahllisten
+### Drucker erscheint nicht in der Liste
 
-Mögliche Ursachen:
-1. Drucker ist inaktiv - Aktivieren Sie den Drucker
-2. Keine Berechtigung - Prüfen Sie Benutzer-Zuordnungen
-3. Kein passendes Papierformat - Prüfen Sie, ob das benötigte Format konfiguriert ist
+1. Gibt es in CUPS auf dem Bridge Rechner eine Warteschlange für den Drucker?
+2. Läuft die Bridge? Neue Warteschlangen erscheinen erst nach der nächsten Prüfung.
 
-### Druckaufträge bleiben wartend
+### Drucker erscheint nicht beim Benutzer oder im Druckdialog
 
-Mögliche Ursachen:
-1. Bridge ist offline - Starten Sie die Printer Bridge neu
-2. Drucker ist ausgeschaltet - Schalten Sie den physischen Drucker ein
-3. Netzwerkproblem - Prüfen Sie die Verbindung zwischen Bridge und Drucker
-4. Spooler-Fehler - Prüfen Sie die Spooler-Konfiguration
+1. Ist der Drucker aktiv und sichtbar?
+2. Ist er dem Benutzer unter **Einstellungen > Benutzer & Rechte > Benutzer** zugewiesen?
 
-### Token-Fehler
+### Gewünschtes Papierformat fehlt
 
-Falls die Bridge sich nicht verbinden kann:
-1. Generieren Sie eine neue Bridge-Konfiguration
-2. Aktivieren Sie "Token neu generieren"
-3. Importieren Sie die neue Konfiguration in die Bridge
+Das Format fehlt im Treiber des Druckers in CUPS. Es muss dort ergänzt werden, in der Anwendung lässt es sich nicht anlegen.
 
-> **Hinweis:** Das Regenerieren invalidiert den alten Token. Die Bridge muss neu konfiguriert werden.
+### Druckaufträge bleiben offen
+
+1. Bridge läuft nicht oder erreicht die Anwendung nicht
+2. Drucker ist ausgeschaltet oder vom Bridge Rechner aus nicht erreichbar
+3. Warteschlange in CUPS ist angehalten
+
+Den Status einzelner Aufträge sehen Sie unter [Druckaufträge](55-druckauftraege.md).
 
 ## Wichtige Hinweise
 
-> **Hinweis:** Drucker werden über eine separate Bridge-Anwendung angesteuert. Ohne installierte Bridge können keine Druckaufträge verarbeitet werden.
+> **Hinweis:** Ohne laufende Printer Bridge können keine Druckaufträge verarbeitet werden.
 
-> **Netzwerk:** Stellen Sie sicher, dass die Bridge-Anwendung die konfigurierten Drucker im Netzwerk erreichen kann.
+> **Berechtigungen:** Bearbeiten, Löschen und Benutzerzuweisungen sind über Rechte steuerbar und können damit auch Rollen außerhalb der Administration erlaubt werden.
 
-> **Berechtigungen:** Nur Administratoren können Drucker anlegen, bearbeiten und löschen. Die Zuweisung zu Benutzern kann auch von Abteilungsleitern vorgenommen werden.
-
-> **Tipp:** Verwenden Sie aussagekräftige Namen und Standorte, damit Benutzer den richtigen Drucker leicht finden können.
-
-> **Performance:** Viele Drucker mit hohem Druckaufkommen können einen dedizierten Druckserver erfordern. Die Bridge-Anwendung sollte auf einem performanten System laufen.
+> **Tipp:** Vergeben Sie sprechende Aliasse, damit Benutzer den richtigen Drucker leicht finden.
 
 ## Weiterführende Themen
 
